@@ -52,6 +52,8 @@ jobs:
         containerAppName: ${{ env.AZURE_CONTAINER_APP_NAME }}
         resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
         imageToBuild: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        acrUsername: ${{ secrets.AZURE_REGISTRY_USERNAME }}
+        acrPassword: ${{ secrets.AZURE_REGISTRY_PASSWORD }}
         environmentVariables: |
           NODE_ENV=production
           PORT=8080
