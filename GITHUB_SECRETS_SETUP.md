@@ -16,12 +16,9 @@ tJ3p1/7dwsWXKuB3Cv+KeHvGi2A5LKGIic9dotIqHS+ACRB56n+Q
 
 ### **3. DATABASE_URL** (PostgreSQL)
 ```
-postgresql://username:password@hostname:5432/database_name?sslmode=require
+postgresql://imagodb:ImagoMum2024!@imago-db-server.postgres.database.azure.com:5432/imagomum?sslmode=require
 ```
-**You need to create a PostgreSQL database first! Options:**
-- **Azure Database for PostgreSQL** (~$27/month)
-- **Supabase** (FREE - recommended for now)
-- **Railway** (FREE tier available)
+**✅ Azure Database for PostgreSQL is already created and working!**
 
 ### **4. JWT_SECRET**
 ```
@@ -63,8 +60,11 @@ az ad sp create-for-rbac --name "imagomum-deploy" --role contributor --scopes /s
 
 5. **Push code to GitHub** and watch the magic happen! 🎉
 
-## 🎯 **Final Deployment URL:**
-Your backend will be available at:
+## 🎯 **✅ LIVE Deployment URL:**
+Your backend is now live at:
 ```
-https://imagomum-backend.agreeablebeach-XXXXX.eastus2.azurecontainerapps.io/api/v1/
+https://imagomum-backend.agreeablebeach-10200fd5.eastus2.azurecontainerapps.io/api/v1/
 ```
+
+**Health Check**: https://imagomum-backend.agreeablebeach-10200fd5.eastus2.azurecontainerapps.io/health
+**API Docs**: https://imagomum-backend.agreeablebeach-10200fd5.eastus2.azurecontainerapps.io/api-docs/

@@ -8216,3 +8216,311 @@
 2025-08-20 14:45:00:450 [INFO]: 🏥 Health check available at http://localhost:3000/health 
 2025-08-20 14:45:00:450 [INFO]: 🌍 External access: http://0.0.0.0:3000 
 2025-08-20 14:45:00:450 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 14:45:22:4522 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 14:45:22:4522 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 14:45:22:4522 [INFO]: 📊 Environment: development 
+2025-08-20 14:45:22:4522 [INFO]: 🔌 Port: 3000 
+2025-08-20 14:45:22:4522 [INFO]: 🔗 Connecting to database... 
+2025-08-20 14:45:22:4522 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 14:45:22:4522 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 14:45:22:4522 [INFO]: 📊 Environment: development 
+2025-08-20 14:45:22:4522 [INFO]: 🔌 Port: 3000 
+2025-08-20 14:45:22:4522 [INFO]: 🔗 Connecting to database... 
+2025-08-20 14:45:22:4522 [INFO]: Database connected successfully 
+2025-08-20 14:45:22:4522 [INFO]: Database connected successfully 
+2025-08-20 14:45:22:4522 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 14:45:22:4522 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 14:45:23:4523 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 14:45:23:4523 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 14:45:23:4523 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 14:45:23:4523 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 14:45:23:4523 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 14:45:23:4523 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 14:45:23:4523 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 14:45:23:4523 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 14:45:23:4523 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 14:45:23:4523 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 14:50:38:5038 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 14:50:38:5038 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 14:50:38:5038 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 14:50:38:5038 [INFO]: 📊 Environment: development 
+2025-08-20 14:50:38:5038 [INFO]: 🔌 Port: 3000 
+2025-08-20 14:50:38:5038 [INFO]: 🔗 Connecting to database... 
+2025-08-20 14:50:38:5038 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 14:50:38:5038 [INFO]: 📊 Environment: development 
+2025-08-20 14:50:38:5038 [INFO]: 🔌 Port: 3000 
+2025-08-20 14:50:38:5038 [INFO]: 🔗 Connecting to database... 
+2025-08-20 14:50:38:5038 [INFO]: Database connected successfully 
+2025-08-20 14:50:38:5038 [INFO]: Database connected successfully 
+2025-08-20 14:50:38:5038 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 14:50:38:5038 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 14:50:39:5039 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 14:50:39:5039 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 14:50:39:5039 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 14:50:39:5039 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 14:50:39:5039 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 14:50:39:5039 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 14:50:39:5039 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 14:50:39:5039 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 14:50:39:5039 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 14:50:39:5039 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 17:54:40:5440 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 17:54:40:5440 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 17:54:40:5440 [INFO]: 📊 Environment: development 
+2025-08-20 17:54:40:5440 [INFO]: 🔌 Port: 3000 
+2025-08-20 17:54:40:5440 [INFO]: 🔗 Connecting to database... 
+2025-08-20 17:54:40:5440 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 17:54:40:5440 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 17:54:40:5440 [INFO]: 📊 Environment: development 
+2025-08-20 17:54:40:5440 [INFO]: 🔌 Port: 3000 
+2025-08-20 17:54:40:5440 [INFO]: 🔗 Connecting to database... 
+2025-08-20 17:54:40:5440 [INFO]: Database connected successfully 
+2025-08-20 17:54:40:5440 [INFO]: Database connected successfully 
+2025-08-20 17:54:40:5440 [INFO]: ✅ Database connected successfully 
+2025-08-20 17:54:40:5440 [INFO]: 🔄 Syncing database models... 
+2025-08-20 17:54:40:5440 [INFO]: ✅ Database connected successfully 
+2025-08-20 17:54:40:5440 [INFO]: 🔄 Syncing database models... 
+2025-08-20 17:54:40:5440 [ERROR]: ❌ Database connection failed: 
+2025-08-20 17:54:40:5440 [INFO]: ✅ Database models synced successfully 
+2025-08-20 17:54:40:5440 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 17:54:42:5442 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 17:54:42:5442 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 17:54:42:5442 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 17:54:42:5442 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 17:54:42:5442 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 17:54:42:5442 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 17:54:42:5442 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 17:54:42:5442 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 17:54:42:5442 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 18:06:46:646 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 18:06:46:646 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 18:06:46:646 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 18:06:46:646 [INFO]: 📊 Environment: development 
+2025-08-20 18:06:46:646 [INFO]: 🔌 Port: 3000 
+2025-08-20 18:06:46:646 [INFO]: 🔗 Connecting to database... 
+2025-08-20 18:06:46:646 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 18:06:46:646 [INFO]: 📊 Environment: development 
+2025-08-20 18:06:46:646 [INFO]: 🔌 Port: 3000 
+2025-08-20 18:06:46:646 [INFO]: 🔗 Connecting to database... 
+2025-08-20 18:06:46:646 [INFO]: Database connected successfully 
+2025-08-20 18:06:46:646 [INFO]: Database connected successfully 
+2025-08-20 18:06:46:646 [INFO]: ✅ Database connected successfully 
+2025-08-20 18:06:46:646 [INFO]: 🔄 Syncing database models... 
+2025-08-20 18:06:46:646 [INFO]: ✅ Database connected successfully 
+2025-08-20 18:06:46:646 [INFO]: 🔄 Syncing database models... 
+2025-08-20 18:06:46:646 [INFO]: ✅ Database models synced successfully 
+2025-08-20 18:06:46:646 [INFO]: ✅ Database models synced successfully 
+2025-08-20 18:06:46:646 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 18:06:46:646 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 18:06:47:647 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 18:06:47:647 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 18:06:47:647 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 18:06:47:647 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 18:06:47:647 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 18:06:47:647 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 18:06:47:647 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 18:06:47:647 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 18:06:47:647 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 18:06:48:648 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 18:26:36:2636 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 18:26:36:2636 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 18:26:36:2636 [INFO]: 📊 Environment: development 
+2025-08-20 18:26:36:2636 [INFO]: 🔌 Port: 3000 
+2025-08-20 18:26:36:2636 [INFO]: 🔗 Connecting to database... 
+2025-08-20 18:26:36:2636 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 18:26:36:2636 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 18:26:36:2636 [INFO]: 📊 Environment: development 
+2025-08-20 18:26:36:2636 [INFO]: 🔌 Port: 3000 
+2025-08-20 18:26:36:2636 [INFO]: 🔗 Connecting to database... 
+2025-08-20 18:26:37:2637 [INFO]: Database connected successfully 
+2025-08-20 18:26:37:2637 [INFO]: Database connected successfully 
+2025-08-20 18:26:37:2637 [INFO]: ✅ Database connected successfully 
+2025-08-20 18:26:37:2637 [INFO]: 🔄 Syncing database models... 
+2025-08-20 18:26:37:2637 [INFO]: ✅ Database connected successfully 
+2025-08-20 18:26:37:2637 [INFO]: 🔄 Syncing database models... 
+2025-08-20 18:26:37:2637 [INFO]: ✅ Database models synced successfully 
+2025-08-20 18:26:37:2637 [INFO]: ✅ Database models synced successfully 
+2025-08-20 18:26:37:2637 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 18:26:37:2637 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 18:26:38:2638 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 18:26:38:2638 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 18:26:38:2638 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 18:26:38:2638 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 18:26:38:2638 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 18:26:38:2638 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 18:26:38:2638 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 18:26:38:2638 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 18:26:38:2638 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 18:26:38:2638 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 20:23:41:2341 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 20:23:41:2341 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 20:23:41:2341 [INFO]: 📊 Environment: development 
+2025-08-20 20:23:41:2341 [INFO]: 🔌 Port: 3000 
+2025-08-20 20:23:41:2341 [INFO]: 🔗 Connecting to database... 
+2025-08-20 20:23:41:2341 [INFO]: Database connected successfully 
+2025-08-20 20:23:41:2341 [INFO]: ✅ Database connected successfully 
+2025-08-20 20:23:41:2341 [INFO]: 🔄 Syncing database models... 
+2025-08-20 20:23:41:2341 [INFO]: ✅ Database models synced successfully 
+2025-08-20 20:23:41:2341 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 20:23:42:2342 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 20:23:42:2342 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 20:23:42:2342 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 20:23:42:2342 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 20:23:42:2342 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 20:23:42:2342 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 20:23:42:2342 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 20:23:42:2342 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 20:23:42:2342 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 20:24:18:2418 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 20:24:18:2418 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 20:24:18:2418 [INFO]: 📊 Environment: development 
+2025-08-20 20:24:18:2418 [INFO]: 🔌 Port: 3000 
+2025-08-20 20:24:18:2418 [INFO]: 🔗 Connecting to database... 
+2025-08-20 20:24:18:2418 [INFO]: Database connected successfully 
+2025-08-20 20:24:18:2418 [INFO]: ✅ Database connected successfully 
+2025-08-20 20:24:18:2418 [INFO]: 🔄 Syncing database models... 
+2025-08-20 20:24:18:2418 [INFO]: ✅ Database models synced successfully 
+2025-08-20 20:24:18:2418 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 20:24:23:2423 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 20:24:23:2423 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 20:24:23:2423 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 20:24:23:2423 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 20:24:23:2423 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 20:24:23:2423 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 20:24:23:2423 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 20:24:23:2423 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 20:24:23:2423 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 20:25:03:253 [WARN]: 📧 Email credentials not configured. Using mock email service. 
+2025-08-20 20:25:03:253 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 20:25:03:253 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 20:25:03:253 [INFO]: 📊 Environment: development 
+2025-08-20 20:25:03:253 [INFO]: 🔌 Port: 3000 
+2025-08-20 20:25:03:253 [INFO]: 🔗 Connecting to database... 
+2025-08-20 20:25:03:253 [INFO]: Database connected successfully 
+2025-08-20 20:25:03:253 [INFO]: ✅ Database connected successfully 
+2025-08-20 20:25:03:253 [INFO]: 🔄 Syncing database models... 
+2025-08-20 20:25:03:253 [INFO]: ✅ Database models synced successfully 
+2025-08-20 20:25:03:253 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 20:25:09:259 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 20:25:09:259 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 20:25:09:259 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 20:25:09:259 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 20:25:09:259 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 20:25:09:259 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 20:25:09:259 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 20:25:09:259 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 20:25:09:259 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 20:25:35:2535 [WARN]: 📧 Email credentials not configured. Using mock email service. 
+2025-08-20 20:25:35:2535 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 20:25:35:2535 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 20:25:35:2535 [INFO]: 📊 Environment: development 
+2025-08-20 20:25:35:2535 [INFO]: 🔌 Port: 3000 
+2025-08-20 20:25:35:2535 [INFO]: 🔗 Connecting to database... 
+2025-08-20 20:25:36:2536 [INFO]: Database connected successfully 
+2025-08-20 20:25:36:2536 [INFO]: ✅ Database connected successfully 
+2025-08-20 20:25:36:2536 [INFO]: 🔄 Syncing database models... 
+2025-08-20 20:25:36:2536 [INFO]: ✅ Database models synced successfully 
+2025-08-20 20:25:36:2536 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 20:25:38:2538 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 20:25:38:2538 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 20:25:38:2538 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 20:25:38:2538 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 20:25:38:2538 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 20:25:38:2538 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 20:25:38:2538 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 20:25:38:2538 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 20:25:38:2538 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 20:26:24:2624 [WARN]: 📧 Email credentials not configured. Using mock email service. 
+2025-08-20 20:26:24:2624 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 20:26:24:2624 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 20:26:24:2624 [INFO]: 📊 Environment: development 
+2025-08-20 20:26:24:2624 [INFO]: 🔌 Port: 3000 
+2025-08-20 20:26:24:2624 [INFO]: 🔗 Connecting to database... 
+2025-08-20 20:26:24:2624 [INFO]: Database connected successfully 
+2025-08-20 20:26:24:2624 [INFO]: ✅ Database connected successfully 
+2025-08-20 20:26:24:2624 [INFO]: 🔄 Syncing database models... 
+2025-08-20 20:26:24:2624 [INFO]: ✅ Database models synced successfully 
+2025-08-20 20:26:24:2624 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 20:26:26:2626 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 20:26:26:2626 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 20:26:26:2626 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 20:26:26:2626 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 20:26:26:2626 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 20:26:26:2626 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 20:26:26:2626 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 20:26:26:2626 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 20:26:26:2626 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 20:27:14:2714 [WARN]: 📧 Email credentials not configured. Using mock email service. 
+2025-08-20 20:27:14:2714 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 20:27:14:2714 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 20:27:14:2714 [INFO]: 📊 Environment: development 
+2025-08-20 20:27:14:2714 [INFO]: 🔌 Port: 3000 
+2025-08-20 20:27:14:2714 [INFO]: 🔗 Connecting to database... 
+2025-08-20 20:27:14:2714 [INFO]: Database connected successfully 
+2025-08-20 20:27:14:2714 [INFO]: ✅ Database connected successfully 
+2025-08-20 20:27:14:2714 [INFO]: 🔄 Syncing database models... 
+2025-08-20 20:27:14:2714 [INFO]: ✅ Database models synced successfully 
+2025-08-20 20:27:14:2714 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 20:27:16:2716 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 20:27:16:2716 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 20:27:16:2716 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 20:27:16:2716 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 20:27:16:2716 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 20:27:16:2716 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 20:27:16:2716 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 20:27:16:2716 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 20:27:16:2716 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 20:28:13:2813 [WARN]: 📧 Email credentials not configured. Using mock email service. 
+2025-08-20 20:28:13:2813 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 20:28:13:2813 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 20:28:13:2813 [INFO]: 📊 Environment: development 
+2025-08-20 20:28:13:2813 [INFO]: 🔌 Port: 3000 
+2025-08-20 20:28:13:2813 [INFO]: 🔗 Connecting to database... 
+2025-08-20 20:28:13:2813 [INFO]: Database connected successfully 
+2025-08-20 20:28:13:2813 [INFO]: ✅ Database connected successfully 
+2025-08-20 20:28:13:2813 [INFO]: 🔄 Syncing database models... 
+2025-08-20 20:28:13:2813 [INFO]: ✅ Database models synced successfully 
+2025-08-20 20:28:13:2813 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 20:28:16:2816 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 20:28:16:2816 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 20:28:16:2816 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 20:28:16:2816 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 20:28:16:2816 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 20:28:16:2816 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 20:28:16:2816 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 20:28:16:2816 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 20:28:16:2816 [INFO]: 🌍 External access: http://0.0.0.0:3000 
