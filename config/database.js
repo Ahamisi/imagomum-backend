@@ -51,7 +51,7 @@ module.exports = {
   },
   production: {
     use_env_variable: 'DATABASE_URL',
-    dialect: process.env.DB_DIALECT || 'mssql',
+    dialect: 'postgres',
     logging: false,
     pool: {
       max: 20,
@@ -69,10 +69,9 @@ module.exports = {
       paranoid: true
     },
     dialectOptions: {
-      options: {
-        encrypt: true,
-        trustServerCertificate: false,
-        enableArithAbort: true
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
       }
     }
   }

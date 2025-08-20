@@ -13,7 +13,8 @@
 # From Container Registry → Access Keys → Password
 
 # 4. DATABASE_URL (Azure SQL Database)
-# Format: mssql://username:password@imagomum-sql-server.database.windows.net:1433/imagomum_production?encrypt=true
+# Your connection string converted to Sequelize format:
+# mssql://imagodb:xavsin-puctu4-Regwor@imagomum-db-server.database.windows.net:1433/imagomum_production?encrypt=true&trustServerCertificate=false
 
 # 5. JWT_SECRET
 # Generate a strong secret: openssl rand -base64 32
