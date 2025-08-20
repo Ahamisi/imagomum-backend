@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imagomum Audio Chat Demo</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #f5f5f5;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .controls { 
+            margin: 20px 0; 
+            text-align: center;
+        }
+        button { 
+            padding: 12px 24px; 
+            margin: 8px; 
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .start-btn {
+            background: #28a745;
+            color: white;
+        }
+        .start-btn:hover {
+            background: #218838;
+        }
+        .stop-btn {
+            background: #dc3545;
+            color: white;
+        }
+        .stop-btn:hover {
+            background: #c82333;
+        }
+        .auth-btn {
+            background: #007bff;
+            color: white;
+        }
+        .auth-btn:hover {
+            background: #0056b3;
+        }
+        button:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        .config {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+        .config label {
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        .config select {
+            padding: 5px 10px;
+            margin-left: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .transcript { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            height: 400px; 
+            overflow-y: auto; 
+            background: #fafafa;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        .interim { 
+            color: #666; 
+            font-style: italic; 
+        }
+        .final { 
+            color: #000; 
+            font-weight: bold; 
+            margin: 5px 0;
+        }
+        .status { 
+            color: #007bff; 
+            background: #e3f2fd;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+        .error { 
+            color: #dc3545; 
+            background: #ffebee;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+        .ai-response {
+            color: #28a745;
+            background: #e8f5e8;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 5px 0;
+            border-left: 4px solid #28a745;
+        }
+        .auth-section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff3cd;
+            border-radius: 6px;
+            border-left: 4px solid #ffc107;
+        }
+        .auth-input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .connection-status {
+            padding: 10px;
+            text-align: center;
+            border-radius: 6px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .connected {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .disconnected {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎧 Imagomum Audio Chat Demo</h1>
+            <p>Real-time voice conversation with AI pregnancy assistant</p>
+        </div>
+        
+        <div id="connectionStatus" class="connection-status disconnected">
+            ❌ Disconnected
+        </div>
+
+        <div class="auth-section">
+            <h3>🔐 Authentication (Optional)</h3>
+            <p>Enter your JWT token to save conversations to your account:</p>
+            <input type="text" id="authToken" class="auth-input" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...">
+            <button id="authBtn" class="auth-btn">Authenticate</button>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" class="start-btn">🎤 Start Voice Chat</button>
+            <button id="stopBtn" class="stop-btn" disabled>⏹️ Stop Chat</button>
+        </div>
+        
+        <div class="config">
+            <label>🤖 AI Model: 
+                <select id="model">
+                    <option value="nova-3">Nova 3 (Best)</option>
+                    <option value="nova-2">Nova 2</option>
+                    <option value="base">Base</option>
+                </select>
+            </label>
+            <label>🌍 Language: 
+                <select id="language">
+                    <option value="en-US">English (US)</option>
+                    <option value="en-UK">English (UK)</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+            </label>
+        </div>
+        
+        <h3>💬 Conversation</h3>
+        <div id="transcript" class="transcript">
+            <div class="status">Ready to start voice chat...</div>
+        </div>
+    </div>
+
+    <script>
+        let socket = null;
+        let isConnected = false;
+        let isAuthenticated = false;
+        
+        // For microphone input
+        let micAudioContext = null;
+        let processor = null;
+        let input = null;
+
+        // For speaker output
+        let speakerAudioContext = null;
+        let nextTime = 0;
+        const sampleRate = 24000;
+
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const authBtn = document.getElementById('authBtn');
+        const authToken = document.getElementById('authToken');
+        const transcript = document.getElementById('transcript');
+        const modelSelect = document.getElementById('model');
+        const languageSelect = document.getElementById('language');
+        const connectionStatus = document.getElementById('connectionStatus');
+
+        function updateConnectionStatus(connected) {
+            isConnected = connected;
+            if (connected) {
+                connectionStatus.textContent = '✅ Connected';
+                connectionStatus.className = 'connection-status connected';
+            } else {
+                connectionStatus.textContent = '❌ Disconnected';
+                connectionStatus.className = 'connection-status disconnected';
+            }
+        }
+
+        function addMessage(message, className = '') {
+            const div = document.createElement('div');
+            div.className = className;
+            div.innerHTML = `<strong>${new Date().toLocaleTimeString()}</strong>: ${message}`;
+            transcript.appendChild(div);
+            transcript.scrollTop = transcript.scrollHeight;
+        }
+
+        function initializeSpeaker() {
+            if (!speakerAudioContext) {
+                speakerAudioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: sampleRate });
+                nextTime = speakerAudioContext.currentTime;
+            }
+        }
+
+        function schedulePlayback(pcmData) {
+            if (!speakerAudioContext) return;
+
+            const frameCount = pcmData.length;
+            const audioBuffer = speakerAudioContext.createBuffer(1, frameCount, sampleRate);
+            const bufferData = audioBuffer.getChannelData(0);
+
+            for (let i = 0; i < frameCount; i++) {
+                bufferData[i] = pcmData[i] / 32768.0;
+            }
+
+            const source = speakerAudioContext.createBufferSource();
+            source.buffer = audioBuffer;
+            source.connect(speakerAudioContext.destination);
+
+            const currentTime = speakerAudioContext.currentTime;
+            if (nextTime < currentTime) {
+                nextTime = currentTime;
+            }
+
+            source.start(nextTime);
+            nextTime += audioBuffer.duration;
+        }
+
+        function connect() {
+            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsUrl = `${protocol}//${window.location.host}/ws/transcribe`;
+            
+            addMessage('Connecting to audio service...', 'status');
+            socket = new WebSocket(wsUrl);
+            socket.binaryType = 'blob';
+
+            socket.onopen = function(event) {
+                updateConnectionStatus(true);
+                addMessage('🎧 Connected to audio service', 'status');
+                initializeSpeaker();
+            };
+
+            socket.onmessage = function(event) {
+                if (event.data instanceof Blob) {
+                    // Binary audio data (TTS response)
+                    const reader = new FileReader();
+                    reader.onload = function() {
+                        const arrayBuffer = reader.result;
+                        const pcmData = new Int16Array(arrayBuffer);
+                        schedulePlayback(pcmData);
+                    };
+                    reader.readAsArrayBuffer(event.data);
+                } else {
+                    // JSON messages
+                    const data = JSON.parse(event.data);
+                    switch(data.type) {
+                        case 'connected':
+                            addMessage(`🔗 ${data.message}`, 'status');
+                            break;
+                        case 'interim_transcript':
+                            addMessage(`👂 Hearing: "${data.transcript}"`, 'interim');
+                            break;
+                        case 'final_transcript':
+                            addMessage(`🗣️ You said: "${data.transcript}"`, 'final');
+                            break;
+                        case 'status':
+                            addMessage(`ℹ️ ${data.message}`, 'status');
+                            break;
+                        case 'llm_processing':
+                            addMessage(`🤖 ${data.message}`, 'status');
+                            break;
+                        case 'llm_complete':
+                            addMessage(`✅ ${data.message}`, 'status');
+                            break;
+                        case 'error':
+                            addMessage(`❌ Error: ${data.message}`, 'error');
+                            break;
+                        case 'tts_error':
+                            addMessage(`🔊 TTS Error: ${data.message}`, 'error');
+                            break;
+                    }
+                }
+            };
+
+            socket.onclose = function(event) {
+                updateConnectionStatus(false);
+                addMessage('Connection closed', 'status');
+                resetButtons();
+            };
+
+            socket.onerror = function(error) {
+                addMessage(`WebSocket error: ${error.message || 'Unknown error'}`, 'error');
+            };
+        }
+
+        function resetButtons() {
+            startBtn.disabled = false;
+            stopBtn.disabled = true;
+        }
+
+        async function startMic() {
+            try {
+                micAudioContext = new (window.AudioContext || window.webkitAudioContext)({sampleRate: 16000});
+                await micAudioContext.audioWorklet.addModule('/static/audio-processor.js');
+                processor = new AudioWorkletNode(micAudioContext, 'audio-processor');
+                
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                input = micAudioContext.createMediaStreamSource(stream);
+                input.connect(processor);
+                processor.connect(micAudioContext.destination);
+
+                processor.port.onmessage = (event) => {
+                    if (socket && socket.readyState === WebSocket.OPEN) {
+                        socket.send(event.data);
+                    }
+                };
+
+                addMessage('🎤 Microphone started', 'status');
+            } catch (error) {
+                addMessage(`❌ Microphone error: ${error.message}`, 'error');
+            }
+        }
+
+        async function stopMic() {
+            if (processor) processor.disconnect();
+            if (input) input.disconnect();
+            if (micAudioContext) await micAudioContext.close();
+            processor = null;
+            input = null;
+            micAudioContext = null;
+            addMessage('🎤 Microphone stopped', 'status');
+        }
+
+        async function stopSpeaker() {
+            if (speakerAudioContext) {
+                await speakerAudioContext.close();
+                speakerAudioContext = null;
+                nextTime = 0;
+            }
+        }
+
+        // Event Listeners
+        authBtn.addEventListener('click', function() {
+            const token = authToken.value.trim();
+            if (!token) {
+                addMessage('❌ Please enter a JWT token', 'error');
+                return;
+            }
+
+            if (socket && socket.readyState === WebSocket.OPEN) {
+                socket.send(JSON.stringify({
+                    action: 'authenticate',
+                    token: token
+                }));
+                addMessage('🔐 Authenticating...', 'status');
+            } else {
+                addMessage('❌ Not connected to server', 'error');
+            }
+        });
+
+        startBtn.addEventListener('click', function() {
+            if (!isConnected) {
+                connect();
+                setTimeout(() => {
+                    if (isConnected) {
+                        startSession();
+                    }
+                }, 1000);
+            } else {
+                startSession();
+            }
+        });
+
+        function startSession() {
+            initializeSpeaker(); // Resume audio context on user gesture
+            socket.send(JSON.stringify({
+                action: 'start',
+                model: modelSelect.value,
+                language: languageSelect.value
+            }));
+            startMic();
+            startBtn.disabled = true;
+            stopBtn.disabled = false;
+            addMessage('🚀 Voice chat started! Speak now...', 'status');
+        }
+
+        stopBtn.addEventListener('click', function() {
+            if (socket) {
+                socket.send(JSON.stringify({action: 'stop'}));
+            }
+            stopMic();
+            stopSpeaker();
+            resetButtons();
+            addMessage('⏹️ Voice chat stopped', 'status');
+        });
+
+        // Initialize
+        addMessage('🎧 Imagomum Audio Chat Demo loaded. Click "Start Voice Chat" to begin.', 'status');
+    </script>
+</body>
+</html> 

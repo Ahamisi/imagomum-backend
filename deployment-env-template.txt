@@ -1,0 +1,42 @@
+# ===== AZURE DEPLOYMENT ENVIRONMENT VARIABLES =====
+# Copy these to GitHub Secrets after filling in the values
+
+# === GitHub Secrets to Create ===
+
+# 1. AZURE_CREDENTIALS (Service Principal JSON)
+# Get this by running: az ad sp create-for-rbac --name "imagomum-deploy" --role contributor --scopes /subscriptions/YOUR_SUBSCRIPTION_ID/resourceGroups/Imago-mum --sdk-auth
+
+# 2. AZURE_REGISTRY_USERNAME
+# From Container Registry → Access Keys → Username
+
+# 3. AZURE_REGISTRY_PASSWORD  
+# From Container Registry → Access Keys → Password
+
+# 4. DATABASE_URL (Azure SQL Database)
+# Format: mssql://username:password@imagomum-sql-server.database.windows.net:1433/imagomum_production?encrypt=true
+
+# 5. JWT_SECRET
+# Generate a strong secret: openssl rand -base64 32
+
+# 6. AZURE_STORAGE_CONNECTION_STRING
+# You already have this from your existing storage account
+
+# 7. AI_SERVICE_BASE_URL
+# Your existing: https://imagomum-app.agreeablebeach-10200fd5.eastus2.azurecontainerapps.io
+
+# ===== PRODUCTION DATABASE SETUP =====
+# After creating PostgreSQL server, run these commands:
+
+# 1. Create database
+CREATE DATABASE imagomum_production;
+
+# 2. Create user (replace with your preferred credentials)
+CREATE USER imagomum_user WITH PASSWORD 'your_secure_password_here';
+
+# 3. Grant permissions
+GRANT ALL PRIVILEGES ON DATABASE imagomum_production TO imagomum_user;
+
+# ===== FIREWALL RULES =====
+# Add these IP ranges to PostgreSQL firewall:
+# - Azure services: 0.0.0.0 to 0.0.0.0
+# - Your local IP for management access
