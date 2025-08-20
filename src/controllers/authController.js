@@ -6,6 +6,7 @@ const { Op } = require('sequelize');
 const { ValidationError, ConflictError, AuthenticationError, NotFoundError } = require('../middleware/errorHandler');
 const logger = require('../utils/logger');
 const User = require('../models/User');
+const emailService = require('../services/emailService');
 
 // Generate 6-digit OTP
 const generateOTP = () => {
@@ -29,16 +30,34 @@ const generateTokens = (userId, email) => {
   return { accessToken, refreshToken };
 };
 
-// Send OTP via email and SMS (mock implementation)
-const sendOTP = async (email, phoneNumber, otp) => {
-  // TODO: Implement actual email and SMS sending
-  logger.info('OTP sent', { email, phoneNumber, otp: '******' });
-  
-  // Mock implementation - in production, integrate with email service and SMS provider
-  console.log(`📧 EMAIL OTP to ${email}: ${otp}`);
-  console.log(`📱 SMS OTP to ${phoneNumber}: ${otp}`);
-  
-  return true;
+// Send OTP via email and SMS
+const sendOTP = async (email, phoneNumber, otp, userName = 'User') => {
+  try {
+    // Send email OTP
+    const emailResult = await emailService.sendOTP(email, otp, userName);
+    
+    // Log the attempt (without exposing the actual OTP in logs)
+    logger.info('OTP sent', { 
+      email, 
+      phoneNumber, 
+      emailSent: emailResult.success,
+      mock: emailResult.mock || false
+    });
+    
+    // TODO: Add SMS sending here when needed
+    // For now, also log to console for development
+    if (process.env.NODE_ENV === 'development') {
+      console.log(`📧 EMAIL OTP to ${email}: ${otp}`);
+      console.log(`📱 SMS OTP to ${phoneNumber}: ${otp}`);
+    }
+    
+    return emailResult.success;
+  } catch (error) {
+    logger.error('Failed to send OTP:', error);
+    // Fallback: log to console
+    console.log(`🔐 [FALLBACK] OTP for ${email}: ${otp}`);
+    return false;
+  }
 };
 
 const authController = {
@@ -101,7 +120,7 @@ const authController = {
       });
 
       // Send OTP
-      await sendOTP(email, phoneNumber, otp);
+      await sendOTP(email, phoneNumber, otp, fullName);
 
       // Log signup event
       logger.logSystemEvent('USER_SIGNUP_INITIATED', {
@@ -175,6 +194,14 @@ const authController = {
       // Generate JWT tokens
       const tokens = generateTokens(user.id, user.email);
 
+      // Send welcome email
+      try {
+        await emailService.sendWelcomeEmail(user.email, user.fullName);
+      } catch (emailError) {
+        logger.error('Failed to send welcome email:', emailError);
+        // Don't fail the verification if email fails
+      }
+
       // Log successful verification
       logger.logSystemEvent('USER_ACCOUNT_VERIFIED', {
         userId: user.id,
@@ -241,7 +268,7 @@ const authController = {
       });
 
       // Send new OTP
-      await sendOTP(user.email, user.phoneNumber, newOtp);
+      await sendOTP(user.email, user.phoneNumber, newOtp, user.fullName);
 
       // Log resend event
       logger.logSystemEvent('OTP_RESEND', {

@@ -3374,3 +3374,36 @@
   "port": 3000,
   "stack": "Error: listen EADDRINUSE: address already in use 0.0.0.0:3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at node:net:2205:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)"
 }
+2025-08-20 14:45:23:4523 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use 0.0.0.0:3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "0.0.0.0",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use 0.0.0.0:3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at node:net:2205:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)"
+}
+2025-08-20 14:50:39:5039 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use 0.0.0.0:3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "0.0.0.0",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use 0.0.0.0:3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at node:net:2205:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)"
+}
+2025-08-20 17:54:40:5440 [ERROR]: ❌ Database connection failed: 
+2025-08-20 18:06:48:648 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use 0.0.0.0:3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "0.0.0.0",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use 0.0.0.0:3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at node:net:2205:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)"
+}
+2025-08-20 18:26:38:2638 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use 0.0.0.0:3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "0.0.0.0",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use 0.0.0.0:3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at node:net:2205:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)"
+}
