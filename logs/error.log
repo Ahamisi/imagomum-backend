@@ -1,0 +1,3304 @@
+2025-07-28 19:43:10:4310 [ERROR]: Unable to connect to the database: role "imagomum_user" does not exist {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 105,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28000",
+    "file": "miscinit.c",
+    "line": "770",
+    "routine": "InitializeSessionUserId"
+  },
+  "original": {
+    "length": 105,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28000",
+    "file": "miscinit.c",
+    "line": "770",
+    "routine": "InitializeSessionUserId"
+  },
+  "stack": "SequelizeConnectionError: role \"imagomum_user\" does not exist\n    at Client._connectionCallback (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)\n    at Client._handleErrorWhileConnecting (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg/lib/client.js:336:19)\n    at Client._handleErrorMessage (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg/lib/client.js:356:19)\n    at Connection.emit (node:events:518:28)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg/lib/connection.js:116:12\n    at Parser.parse (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg-protocol/dist/parser.js:36:17)\n    at Socket.<anonymous> (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg-protocol/dist/index.js:11:42)\n    at Socket.emit (node:events:518:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-07-28 19:43:46:4346 [ERROR]: Unable to connect to the database: role "imagomum_user" does not exist {
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "length": 105,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28000",
+    "file": "miscinit.c",
+    "line": "770",
+    "routine": "InitializeSessionUserId"
+  },
+  "original": {
+    "length": 105,
+    "name": "error",
+    "severity": "FATAL",
+    "code": "28000",
+    "file": "miscinit.c",
+    "line": "770",
+    "routine": "InitializeSessionUserId"
+  },
+  "stack": "SequelizeConnectionError: role \"imagomum_user\" does not exist\n    at Client._connectionCallback (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)\n    at Client._handleErrorWhileConnecting (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg/lib/client.js:336:19)\n    at Client._handleErrorMessage (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg/lib/client.js:356:19)\n    at Connection.emit (node:events:518:28)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg/lib/connection.js:116:12\n    at Parser.parse (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg-protocol/dist/parser.js:36:17)\n    at Socket.<anonymous> (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/pg-protocol/dist/index.js:11:42)\n    at Socket.emit (node:events:518:28)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)"
+}
+2025-07-28 19:46:12:4612 [ERROR]: Error occurred: Route /favicon.ico not found {
+  "statusCode": 404,
+  "url": "/favicon.ico",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-28 19:56:00:560 [ERROR]: Error occurred: Route /api/3000/auth/verify-otp not found {
+  "statusCode": 404,
+  "url": "/api/3000/auth/verify-otp",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "otp": "628632",
+    "email": "yellow@gmail.com"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-28 19:57:16:5716 [ERROR]: Error occurred: Route /api/3000/auth/verify-otp not found {
+  "statusCode": 404,
+  "url": "/api/3000/auth/verify-otp",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "otp": "628632",
+    "email": "yellow@gmail.com"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-28 19:59:50:5950 [ERROR]: Error occurred: Route /api/3000/auth/verify-otp not found {
+  "statusCode": 404,
+  "url": "/api/3000/auth/verify-otp",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "otp": "628632",
+    "email": "yellow@gmail.com"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-28 19:59:52:5952 [ERROR]: Error occurred: Route /api/3000/auth/verify-otp not found {
+  "statusCode": 404,
+  "url": "/api/3000/auth/verify-otp",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "otp": "628632",
+    "email": "yellow@gmail.com"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-28 20:00:21:021 [ERROR]: Error occurred: Route /api/3000/auth/verify-otp not found {
+  "statusCode": 404,
+  "url": "/api/3000/auth/verify-otp",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "otp": "628632",
+    "email": "yellow@gmail.com"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 00:14:29:1429 [ERROR]: Resend OTP error: Account is already verified {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Account is already verified\n    at resendOTP (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:231:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 00:14:29:1429 [ERROR]: Error occurred: Account is already verified {
+  "statusCode": 400,
+  "url": "/api/v1/auth/resend-otp",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:24:03:243 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 01:24:03:243 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com",
+    "password": "SecurePass123!"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:26:38:2638 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:49:32:4932 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:50:01:501 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:304:15)"
+}
+2025-07-29 01:50:01:501 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "PAss@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:50:05:505 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:304:15)"
+}
+2025-07-29 01:50:05:505 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "PAss@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:50:48:5048 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 01:50:48:5048 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com",
+    "password": "SecurePass123!"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:50:57:5057 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 01:50:57:5057 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:51:48:5148 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:53:55:5355 [ERROR]: Error occurred: Invalid token {
+  "statusCode": 401,
+  "url": "/api/v1/onboarding/status",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:54:13:5413 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 01:54:13:5413 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 01:54:49:5449 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 01:54:49:5449 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com",
+    "password": "SecurePass123!"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:00:23:023 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:22:11:2211 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:27:09:279 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:27:27:2727 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:27:27:2727 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:27:36:2736 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:27:36:2736 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:27:37:2737 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:27:37:2737 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:27:38:2738 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:27:38:2738 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:27:42:2742 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:27:42:2742 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:27:43:2743 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:27:43:2743 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:29:31:2931 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:29:51:2951 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:29:51:2951 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:29:52:2952 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:29:52:2952 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:30:01:301 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:30:01:301 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:30:12:3012 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:30:12:3012 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com",
+    "password": "SecurePass123!"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:30:14:3014 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:30:14:3014 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com",
+    "password": "SecurePass123!"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:30:36:3036 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:30:36:3036 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:30:48:3048 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:30:48:3048 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:30:49:3049 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:30:49:3049 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:38:02:382 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:38:02:382 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:38:03:383 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:38:03:383 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:43:55:4355 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "::",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at Server.listen (node:net:2101:7)\n    at Function.listen (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/application.js:635:24)\n    at startServer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/server.js:21:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:45:12:4512 [ERROR]: Signup error: User with this email already exists {
+  "statusCode": 409,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: User with this email already exists\n    at signup (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:76:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:45:12:4512 [ERROR]: Error occurred: User with this email already exists {
+  "statusCode": 409,
+  "url": "/api/v1/auth/signup",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "fullName": "Chioma Imago",
+    "email": "test@imagomum.com",
+    "phoneNumber": "08080957681",
+    "password": "Pass@123",
+    "confirmPassword": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:45:47:4547 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:45:47:4547 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:45:49:4549 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:45:49:4549 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:46:09:469 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:46:09:469 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:46:18:4618 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:46:18:4618 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:48:28:4828 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:48:46:4846 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:49:19:4919 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:49:19:4919 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:49:20:4920 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:49:20:4920 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:49:21:4921 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:49:21:4921 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:49:22:4922 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:49:22:4922 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:49:45:4945 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:49:45:4945 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:49:46:4946 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:49:46:4946 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:49:47:4947 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:49:47:4947 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:49:48:4948 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:49:48:4948 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:49:54:4954 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:49:54:4954 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@123ww"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:52:08:528 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:52:42:5242 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:53:57:5357 [ERROR]: Login error: Please verify your account first {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Please verify your account first\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:285:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 02:53:57:5357 [ERROR]: Error occurred: Please verify your account first {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomum.com",
+    "password": "Pass@1"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:55:36:5536 [ERROR]: Get onboarding status error: User not found {
+  "statusCode": 404,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: User not found\n    at getOnboardingStatus (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/onboardingController.js:66:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:119:3)\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/index.js:346:12)"
+}
+2025-07-29 02:55:36:5536 [ERROR]: Error occurred: User not found {
+  "statusCode": 404,
+  "url": "/api/v1/onboarding/status",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-29 02:56:19:5619 [ERROR]: Get onboarding status error: User not found {
+  "statusCode": 404,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: User not found\n    at getOnboardingStatus (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/onboardingController.js:66:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:119:3)\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/index.js:346:12)"
+}
+2025-07-29 02:56:19:5619 [ERROR]: Error occurred: User not found {
+  "statusCode": 404,
+  "url": "/api/v1/onboarding/status",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "5be08b43-3066-43d1-a056-ff1876f61692",
+  "params": {},
+  "query": {}
+}
+2025-07-29 03:00:18:018 [ERROR]: Get onboarding status error: User not found {
+  "statusCode": 404,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: User not found\n    at getOnboardingStatus (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/onboardingController.js:42:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 03:00:18:018 [ERROR]: Error occurred: User not found {
+  "statusCode": 404,
+  "url": "/api/v1/onboarding/status",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "5be08b43-3066-43d1-a056-ff1876f61692",
+  "params": {},
+  "query": {}
+}
+2025-07-29 03:00:19:019 [ERROR]: Get onboarding status error: User not found {
+  "statusCode": 404,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: User not found\n    at getOnboardingStatus (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/onboardingController.js:42:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 03:00:19:019 [ERROR]: Error occurred: User not found {
+  "statusCode": 404,
+  "url": "/api/v1/onboarding/status",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "5be08b43-3066-43d1-a056-ff1876f61692",
+  "params": {},
+  "query": {}
+}
+2025-07-29 03:02:01:21 [ERROR]: Error occurred: Invalid token {
+  "statusCode": 401,
+  "url": "/api/v1/onboarding/status",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 03:02:05:25 [ERROR]: Get onboarding status error: User not found {
+  "statusCode": 404,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: User not found\n    at getOnboardingStatus (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/onboardingController.js:42:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 03:02:05:25 [ERROR]: Error occurred: User not found {
+  "statusCode": 404,
+  "url": "/api/v1/onboarding/status",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "5be08b43-3066-43d1-a056-ff1876f61692",
+  "params": {},
+  "query": {}
+}
+2025-07-29 03:02:07:27 [ERROR]: Get onboarding status error: User not found {
+  "statusCode": 404,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: User not found\n    at getOnboardingStatus (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/onboardingController.js:42:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 03:02:07:27 [ERROR]: Error occurred: User not found {
+  "statusCode": 404,
+  "url": "/api/v1/onboarding/status",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "5be08b43-3066-43d1-a056-ff1876f61692",
+  "params": {},
+  "query": {}
+}
+2025-07-29 03:07:30:730 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 12:43:43:4343 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 12:55:02:552 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 13:19:13:1913 [ERROR]: Error occurred: Invalid input data {
+  "statusCode": 400,
+  "url": "/api/v1/onboarding/submit",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "questionId": "lmp_date",
+    "answerType": "exact_date",
+    "answer": "1970-01-01"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 13:21:23:2123 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 13:24:02:242 [ERROR]: Submit onboarding answer error: Invalid answer type for LMP date {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid answer type for LMP date\n    at submitAnswer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/onboardingController.js:176:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 13:24:02:242 [ERROR]: Error occurred: Invalid answer type for LMP date {
+  "statusCode": 400,
+  "url": "/api/v1/onboarding/submit",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "questionId": "lmp_date",
+    "answerType": "exact_date",
+    "answer": "2025-06-29"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 14:51:50:5150 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 14:52:48:5248 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 14:54:39:5439 [ERROR]: Error occurred: Access token required {
+  "statusCode": 401,
+  "url": "/api/v1/onboarding/submit",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "questionId": "lmp_date",
+    "answerType": "exact_date",
+    "answer": "2024-06-26"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 14:55:12:5512 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:281:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 14:55:12:5512 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com",
+    "password": "SecurePass123!"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 14:55:23:5523 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:281:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-29 14:55:23:5523 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "yellow@gmail.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 14:55:50:5550 [ERROR]: Error occurred: Invalid input data {
+  "statusCode": 400,
+  "url": "/api/v1/onboarding/submit",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "questionId": "lmp_date",
+    "answerType": "exact_date",
+    "answer": "2024-06-26"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 14:56:25:5625 [ERROR]: Error occurred: Invalid input data {
+  "statusCode": 400,
+  "url": "/api/v1/onboarding/submit",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "questionId": "lmp_date",
+    "answer": {
+      "type": "exact_date",
+      "date": "2025-06-29"
+    }
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-29 15:01:49:149 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-29 15:03:48:348 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 09:39:46:3946 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 10:00:44:044 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 10:10:01:101 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 10:19:40:1940 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 10:21:38:2138 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 10:25:54:2554 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 10:27:22:2722 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 10:35:54:3554 [ERROR]: Error occurred: Route /api/v1/health not found {
+  "statusCode": 404,
+  "url": "/api/v1/health",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 16:41:49:4149 [ERROR]: Error occurred: Access token required {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/ai/health",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:14:13:1413 [ERROR]: Uncaught Exception: this.processAIAnalysis is not a function {
+  "stack": "TypeError: this.processAIAnalysis is not a function\n    at Immediate.<anonymous> (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:139:14)\n    at process.processImmediate (node:internal/timers:485:21)"
+}
+2025-07-30 17:22:39:2239 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "::",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at Server.listen (node:net:2101:7)\n    at Function.listen (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/application.js:635:24)\n    at startServer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/server.js:20:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:23:02:232 [ERROR]: Failed to clean up uploaded file: ENOENT: no such file or directory, unlink '/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/fc411338-860e-48bb-9fdb-f0d378b89c25.jpg' {
+  "errno": -2,
+  "code": "ENOENT",
+  "syscall": "unlink",
+  "path": "/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/fc411338-860e-48bb-9fdb-f0d378b89c25.jpg",
+  "stack": "Error: ENOENT: no such file or directory, unlink '/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/fc411338-860e-48bb-9fdb-f0d378b89c25.jpg'\n    at async Object.unlink (node:internal/fs/promises:1059:10)\n    at async uploadScan (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:168:11)"
+}
+2025-07-30 17:23:02:232 [ERROR]: Upload scan error: This ultrasound scan has already been uploaded {
+  "statusCode": 409,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: This ultrasound scan has already been uploaded\n    at uploadScan (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:107:15)"
+}
+2025-07-30 17:23:02:232 [ERROR]: Error occurred: This ultrasound scan has already been uploaded {
+  "statusCode": 409,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "scanType": "2D",
+    "gestationalAge": "20 weeks",
+    "scanDate": "2025-07-30"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:32:27:3227 [ERROR]: Error occurred: Invalid input data {
+  "statusCode": 400,
+  "url": "/api/v1/auth/verify-otp",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "otp": "",
+    "email": "test2@imagomum.com"
+  },
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:47:29:4729 [ERROR]: Could not close connections in time, forcefully shutting down 
+2025-07-30 17:47:35:4735 [ERROR]: Get scan details error: invalid input syntax for type uuid: "scan_1753894055196" {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "length": 119,
+    "name": "error",
+    "severity": "ERROR",
+    "code": "22P02",
+    "position": "1207",
+    "file": "uuid.c",
+    "line": "136",
+    "routine": "string_to_uuid",
+    "sql": "SELECT \"id\", \"user_id\" AS \"userId\", \"original_file_name\" AS \"originalFileName\", \"file_name\" AS \"fileName\", \"file_path\" AS \"filePath\", \"file_size\" AS \"fileSize\", \"mime_type\" AS \"mimeType\", \"file_hash\" AS \"fileHash\", \"scan_type\" AS \"scanType\", \"gestational_age\" AS \"gestationalAge\", \"scan_date\" AS \"scanDate\", \"notes\", \"ai_analysis_status\" AS \"aiAnalysisStatus\", \"ai_analysis_result\" AS \"aiAnalysisResult\", \"ai_confidence_score\" AS \"aiConfidenceScore\", \"ai_findings\" AS \"aiFindings\", \"ai_recommendations\" AS \"aiRecommendations\", \"ai_processing_time\" AS \"aiProcessingTime\", \"ai_model_version\" AS \"aiModelVersion\", \"ai_error_message\" AS \"aiErrorMessage\", \"ai_processing_started_at\" AS \"aiProcessingStartedAt\", \"ai_processing_completed_at\" AS \"aiProcessingCompletedAt\", \"medical_review_status\" AS \"medicalReviewStatus\", \"reviewed_by\" AS \"reviewedBy\", \"reviewed_at\" AS \"reviewedAt\", \"review_notes\" AS \"reviewNotes\", \"is_archived\" AS \"isArchived\", \"retention_policy\" AS \"retentionPolicy\", \"view_count\" AS \"viewCount\", \"last_viewed_at\" AS \"lastViewedAt\", \"created_at\", \"updated_at\", \"deleted_at\" FROM \"ultrasound_scans\" AS \"UltrasoundScan\" WHERE (\"UltrasoundScan\".\"deleted_at\" IS NULL AND (\"UltrasoundScan\".\"id\" = 'scan_1753894055196' AND \"UltrasoundScan\".\"user_id\" = '801ffa95-88b7-41c7-9581-8f7cbbc27431'));"
+  },
+  "original": {
+    "length": 119,
+    "name": "error",
+    "severity": "ERROR",
+    "code": "22P02",
+    "position": "1207",
+    "file": "uuid.c",
+    "line": "136",
+    "routine": "string_to_uuid",
+    "sql": "SELECT \"id\", \"user_id\" AS \"userId\", \"original_file_name\" AS \"originalFileName\", \"file_name\" AS \"fileName\", \"file_path\" AS \"filePath\", \"file_size\" AS \"fileSize\", \"mime_type\" AS \"mimeType\", \"file_hash\" AS \"fileHash\", \"scan_type\" AS \"scanType\", \"gestational_age\" AS \"gestationalAge\", \"scan_date\" AS \"scanDate\", \"notes\", \"ai_analysis_status\" AS \"aiAnalysisStatus\", \"ai_analysis_result\" AS \"aiAnalysisResult\", \"ai_confidence_score\" AS \"aiConfidenceScore\", \"ai_findings\" AS \"aiFindings\", \"ai_recommendations\" AS \"aiRecommendations\", \"ai_processing_time\" AS \"aiProcessingTime\", \"ai_model_version\" AS \"aiModelVersion\", \"ai_error_message\" AS \"aiErrorMessage\", \"ai_processing_started_at\" AS \"aiProcessingStartedAt\", \"ai_processing_completed_at\" AS \"aiProcessingCompletedAt\", \"medical_review_status\" AS \"medicalReviewStatus\", \"reviewed_by\" AS \"reviewedBy\", \"reviewed_at\" AS \"reviewedAt\", \"review_notes\" AS \"reviewNotes\", \"is_archived\" AS \"isArchived\", \"retention_policy\" AS \"retentionPolicy\", \"view_count\" AS \"viewCount\", \"last_viewed_at\" AS \"lastViewedAt\", \"created_at\", \"updated_at\", \"deleted_at\" FROM \"ultrasound_scans\" AS \"UltrasoundScan\" WHERE (\"UltrasoundScan\".\"deleted_at\" IS NULL AND (\"UltrasoundScan\".\"id\" = 'scan_1753894055196' AND \"UltrasoundScan\".\"user_id\" = '801ffa95-88b7-41c7-9581-8f7cbbc27431'));"
+  },
+  "sql": "SELECT \"id\", \"user_id\" AS \"userId\", \"original_file_name\" AS \"originalFileName\", \"file_name\" AS \"fileName\", \"file_path\" AS \"filePath\", \"file_size\" AS \"fileSize\", \"mime_type\" AS \"mimeType\", \"file_hash\" AS \"fileHash\", \"scan_type\" AS \"scanType\", \"gestational_age\" AS \"gestationalAge\", \"scan_date\" AS \"scanDate\", \"notes\", \"ai_analysis_status\" AS \"aiAnalysisStatus\", \"ai_analysis_result\" AS \"aiAnalysisResult\", \"ai_confidence_score\" AS \"aiConfidenceScore\", \"ai_findings\" AS \"aiFindings\", \"ai_recommendations\" AS \"aiRecommendations\", \"ai_processing_time\" AS \"aiProcessingTime\", \"ai_model_version\" AS \"aiModelVersion\", \"ai_error_message\" AS \"aiErrorMessage\", \"ai_processing_started_at\" AS \"aiProcessingStartedAt\", \"ai_processing_completed_at\" AS \"aiProcessingCompletedAt\", \"medical_review_status\" AS \"medicalReviewStatus\", \"reviewed_by\" AS \"reviewedBy\", \"reviewed_at\" AS \"reviewedAt\", \"review_notes\" AS \"reviewNotes\", \"is_archived\" AS \"isArchived\", \"retention_policy\" AS \"retentionPolicy\", \"view_count\" AS \"viewCount\", \"last_viewed_at\" AS \"lastViewedAt\", \"created_at\", \"updated_at\", \"deleted_at\" FROM \"ultrasound_scans\" AS \"UltrasoundScan\" WHERE (\"UltrasoundScan\".\"deleted_at\" IS NULL AND (\"UltrasoundScan\".\"id\" = 'scan_1753894055196' AND \"UltrasoundScan\".\"user_id\" = '801ffa95-88b7-41c7-9581-8f7cbbc27431'));",
+  "parameters": {},
+  "stack": "Error\n    at Query.run (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async PostgresQueryInterface.select (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n    at async UltrasoundScan.findAll (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/model.js:1140:21)\n    at async UltrasoundScan.findOne (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/model.js:1240:12)\n    at async getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:20)"
+}
+2025-07-30 17:47:35:4735 [ERROR]: Error occurred: invalid input syntax for type uuid: "scan_1753894055196" {
+  "statusCode": 500,
+  "url": "/api/v1/ultrasounds/scan_1753894055196",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "801ffa95-88b7-41c7-9581-8f7cbbc27431",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:50:54:5054 [ERROR]: Error occurred: Invalid token {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/scan_1753894055196",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:51:45:5145 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:51:45:5145 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894055196",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "801ffa95-88b7-41c7-9581-8f7cbbc27431",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:51:52:5152 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:51:52:5152 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894055196",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:51:55:5155 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:51:55:5155 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894055196",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "801ffa95-88b7-41c7-9581-8f7cbbc27431",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:54:04:544 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:54:04:544 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894443265",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:55:56:5556 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:55:56:5556 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894443265",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:56:53:5653 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:56:53:5653 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894611963",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:59:04:594 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:59:04:594 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894611963",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:59:16:5916 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:59:16:5916 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894611963",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 17:59:29:5929 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 17:59:29:5929 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894611963",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:02:47:247 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:02:47:247 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894611963",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:03:50:350 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:03:50:350 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894611963",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:04:02:42 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:04:02:42 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753894611963",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:08:43:843 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:08:43:843 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895322697",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:11:46:1146 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:11:46:1146 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895505480",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:15:11:1511 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:15:11:1511 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895710581",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:16:57:1657 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:16:57:1657 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895710581",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:17:10:1710 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:17:10:1710 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895710581",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:17:19:1719 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:17:19:1719 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895710581",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:20:00:200 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:20:00:200 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895999663",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:20:26:2026 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:20:26:2026 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895999663",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:20:36:2036 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:20:36:2036 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895999663",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:20:49:2049 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:20:49:2049 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895999663",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:20:59:2059 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:20:59:2059 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895999663",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-07-30 18:21:17:2117 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:290:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:173:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-07-30 18:21:17:2117 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/scan_1753895999663",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-13 01:49:29:4929 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 01:55:43:5543 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:04:51:451 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:06:09:69 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:09:41:941 [ERROR]: AI Service Response Error: Request failed with status code 422 {
+  "status": 422,
+  "statusText": "Unprocessable Entity",
+  "url": "/api/ultrasound/analyze"
+}
+2025-08-13 02:09:41:941 [ERROR]: AI analysis failed {
+  "error": "Request failed with status code 422",
+  "processingTime": 2916,
+  "status": 422,
+  "filePath": "/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/[filename]"
+}
+2025-08-13 02:09:41:941 [ERROR]: AI analysis failed for scan {
+  "scanId": "8629112f-95af-49a8-8ad9-b1427566b826",
+  "error": "Request failed with status code 422"
+}
+2025-08-13 02:12:01:121 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:15:38:1538 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:19:23:1923 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:30:40:3040 [ERROR]: Failed to initialize Azure Storage container {
+  "error": "Public access is not permitted on this storage account.\nRequestId:364b5909-001e-0026-27f1-0b3eb0000000\nTime:2025-08-13T01:30:41.1169308Z",
+  "containerName": "ultrasound-images"
+}
+2025-08-13 02:31:06:316 [ERROR]: Failed to initialize Azure Storage container {
+  "error": "Public access is not permitted on this storage account.\nRequestId:d68fcc76-e01e-002e-3ef1-0b24bf000000\nTime:2025-08-13T01:31:07.2767107Z",
+  "containerName": "ultrasound-images"
+}
+2025-08-13 02:31:41:3141 [ERROR]: Failed to upload file to Azure Storage {
+  "error": "The specified container does not exist.\nRequestId:364bb2c8-001e-0026-63f2-0b3eb0000000\nTime:2025-08-13T01:31:41.7836689Z",
+  "filePath": "/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/[filename]",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4"
+}
+2025-08-13 02:35:47:3547 [ERROR]: Failed to initialize Azure Storage container {
+  "error": "Public access is not permitted on this storage account.\nRequestId:f6431ab8-f01e-0040-77f2-0b7190000000\nTime:2025-08-13T01:35:47.5025182Z",
+  "containerName": "ultrasound-images"
+}
+2025-08-13 02:35:55:3555 [ERROR]: Failed to initialize Azure Storage container {
+  "error": "Public access is not permitted on this storage account.\nRequestId:2a94bd17-601e-006d-4df2-0bc2e3000000\nTime:2025-08-13T01:35:56.1803764Z",
+  "containerName": "ultrasound-images"
+}
+2025-08-13 02:36:14:3614 [ERROR]: Failed to initialize Azure Storage container {
+  "error": "Public access is not permitted on this storage account.\nRequestId:970bb9e0-101e-0067-52f2-0b6654000000\nTime:2025-08-13T01:36:15.0122167Z",
+  "containerName": "ultrasound-images"
+}
+2025-08-13 02:36:20:3620 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:36:34:3634 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:37:55:3755 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:39:17:3917 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:39:35:3935 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 02:43:17:4317 [ERROR]: Failed to initialize Azure Storage container {
+  "error": "Public access is not permitted on this storage account.\nRequestId:6283d2b4-501e-003b-22f3-0b330c000000\nTime:2025-08-13T01:43:17.9051371Z",
+  "containerName": "ultrasound-images"
+}
+2025-08-13 02:43:50:4350 [ERROR]: Failed to upload file to Azure Storage {
+  "error": "The specified container does not exist.\nRequestId:62841f66-501e-003b-74f3-0b330c000000\nTime:2025-08-13T01:43:50.9209066Z",
+  "filePath": "/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/[filename]",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4"
+}
+2025-08-13 02:46:32:4632 [ERROR]: Failed to initialize Azure Storage container {
+  "error": "Public access is not permitted on this storage account.\nRequestId:b315470e-401e-006a-65f4-0bae80000000\nTime:2025-08-13T01:46:33.2411196Z",
+  "containerName": "ultrasound-images"
+}
+2025-08-13 02:47:57:4757 [ERROR]: Failed to initialize Azure Storage container {
+  "error": "Public access is not permitted on this storage account.\nRequestId:2d171a49-901e-0046-50f4-0b422f000000\nTime:2025-08-13T01:47:58.0521461Z",
+  "containerName": "ultrasound-images"
+}
+2025-08-13 02:52:50:5250 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 03:01:47:147 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "::",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at Server.listen (node:net:2101:7)\n    at Function.listen (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/application.js:635:24)\n    at startServer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/server.js:29:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-13 03:01:56:156 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "::",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at Server.listen (node:net:2101:7)\n    at Function.listen (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/application.js:635:24)\n    at startServer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/server.js:29:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-13 03:10:06:106 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 03:14:41:1441 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "::",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at Server.listen (node:net:2101:7)\n    at Function.listen (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/application.js:635:24)\n    at startServer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/server.js:29:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-13 03:23:28:2328 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 03:24:08:248 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 03:25:51:2551 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 03:32:28:3228 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 03:34:26:3426 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 03:37:50:3750 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 03:38:56:3856 [ERROR]: Error occurred: Unexpected token 'n', "null" is not valid JSON {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 03:50:13:5013 [ERROR]: Could not close connections in time, forcefully shutting down 
+2025-08-13 03:51:32:5132 [ERROR]: Could not close connections in time, forcefully shutting down 
+2025-08-13 03:53:59:5359 [ERROR]: Could not close connections in time, forcefully shutting down 
+2025-08-13 04:01:04:14 [ERROR]: Error occurred: Route /api/ultrasounds/upload not found {
+  "statusCode": 404,
+  "url": "/api/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 04:01:43:143 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-13 04:05:29:529 [ERROR]: Could not close connections in time, forcefully shutting down 
+2025-08-13 04:06:36:636 [ERROR]: Error occurred: Invalid input data {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "scanType": "2d",
+    "gestationalAge": "20 Weeks ",
+    "scanDate": "2025-08-13"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 04:08:37:837 [ERROR]: Error occurred: Invalid input data {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "scanType": "2D",
+    "scanDate": "2025-08-13",
+    "gestationalAge": ""
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 04:10:17:1017 [ERROR]: Could not close connections in time, forcefully shutting down 
+2025-08-13 04:10:55:1055 [ERROR]: Error occurred: Invalid input data {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "scanType": "2d",
+    "gestationalAge": "20 Weeks ",
+    "scanDate": "2025-08-13"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 04:23:52:2352 [ERROR]: Failed to clean up uploaded file: ENOENT: no such file or directory, unlink '/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/b977e6f2-891f-48a9-af56-fd073015a6aa.jpg' {
+  "errno": -2,
+  "code": "ENOENT",
+  "syscall": "unlink",
+  "path": "/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/b977e6f2-891f-48a9-af56-fd073015a6aa.jpg",
+  "stack": "Error: ENOENT: no such file or directory, unlink '/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/b977e6f2-891f-48a9-af56-fd073015a6aa.jpg'\n    at async Object.unlink (node:internal/fs/promises:1059:10)\n    at async uploadScan (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:226:11)"
+}
+2025-08-13 04:23:52:2352 [ERROR]: Upload scan error: This ultrasound scan has already been uploaded {
+  "statusCode": 409,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: This ultrasound scan has already been uploaded\n    at uploadScan (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:125:15)"
+}
+2025-08-13 04:23:52:2352 [ERROR]: Error occurred: This ultrasound scan has already been uploaded {
+  "statusCode": 409,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "scanType": "2D",
+    "scanDate": "2025-08-13",
+    "gestationalAge": "20 Weeks"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 04:24:11:2411 [ERROR]: Failed to clean up uploaded file: ENOENT: no such file or directory, unlink '/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/400c5f09-79a8-4c55-af5c-ba9391e30bbc.jpg' {
+  "errno": -2,
+  "code": "ENOENT",
+  "syscall": "unlink",
+  "path": "/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/400c5f09-79a8-4c55-af5c-ba9391e30bbc.jpg",
+  "stack": "Error: ENOENT: no such file or directory, unlink '/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/400c5f09-79a8-4c55-af5c-ba9391e30bbc.jpg'\n    at async Object.unlink (node:internal/fs/promises:1059:10)\n    at async uploadScan (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:226:11)"
+}
+2025-08-13 04:24:11:2411 [ERROR]: Upload scan error: This ultrasound scan has already been uploaded {
+  "statusCode": 409,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: This ultrasound scan has already been uploaded\n    at uploadScan (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:125:15)"
+}
+2025-08-13 04:24:11:2411 [ERROR]: Error occurred: This ultrasound scan has already been uploaded {
+  "statusCode": 409,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "scanType": "2D",
+    "gestationalAge": "20 weeks",
+    "scanDate": "2025-08-13"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 04:26:25:2625 [ERROR]: Failed to clean up uploaded file: ENOENT: no such file or directory, unlink '/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/ad6c6933-40ac-41d1-9157-0d61cbb388a2.jpg' {
+  "errno": -2,
+  "code": "ENOENT",
+  "syscall": "unlink",
+  "path": "/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/ad6c6933-40ac-41d1-9157-0d61cbb388a2.jpg",
+  "stack": "Error: ENOENT: no such file or directory, unlink '/Users/theaceman/Documents/cambiar_projects/imagomum-be/uploads/ultrasounds/ad6c6933-40ac-41d1-9157-0d61cbb388a2.jpg'\n    at async Object.unlink (node:internal/fs/promises:1059:10)\n    at async uploadScan (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:226:11)"
+}
+2025-08-13 04:26:25:2625 [ERROR]: Upload scan error: This ultrasound scan has already been uploaded {
+  "statusCode": 409,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: This ultrasound scan has already been uploaded\n    at uploadScan (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:125:15)"
+}
+2025-08-13 04:26:25:2625 [ERROR]: Error occurred: This ultrasound scan has already been uploaded {
+  "statusCode": 409,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "scanType": "2D",
+    "gestationalAge": "20 weeks",
+    "scanDate": "2025-08-13"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 05:57:48:5748 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-13 05:58:13:5813 [ERROR]: AI chat service error {
+  "error": "Request failed with status code 422",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "threadId": "thread_819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4_1755061092651_84oy5f",
+  "status": 422,
+  "responseData": {
+    "detail": [
+      {
+        "type": "missing",
+        "loc": [
+          "body",
+          "image_path"
+        ],
+        "msg": "Field required",
+        "input": {
+          "user_id": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+          "thread_id": "thread_819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4_1755061092651_84oy5f",
+          "message": "Hello, should I be worried about high fetal heartbeat?"
+        }
+      }
+    ]
+  }
+}
+2025-08-13 05:58:13:5813 [ERROR]: Error occurred: Failed to get AI response {
+  "statusCode": 500,
+  "url": "/api/v1/chat/message",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "message": "Hello, should I be worried about high fetal heartbeat?"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 05:59:51:5951 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-13 06:04:53:453 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:05:02:52 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:05:15:515 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:05:27:527 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:05:35:535 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:06:10:610 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:06:19:619 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:06:27:627 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:06:46:646 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:06:58:658 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:07:06:76 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:07:48:748 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:07:55:755 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:09:13:913 [ERROR]: AI chat service error {
+  "error": "Request failed with status code 422",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "threadId": "thread_819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4_1755061752946_do5bmp",
+  "status": 422,
+  "responseData": {
+    "detail": [
+      {
+        "type": "missing",
+        "loc": [
+          "body",
+          "image_path"
+        ],
+        "msg": "Field required",
+        "input": {
+          "user_id": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+          "thread_id": "thread_819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4_1755061752946_do5bmp",
+          "message": "Hello I need urgent help"
+        }
+      }
+    ]
+  }
+}
+2025-08-13 06:09:13:913 [ERROR]: Error occurred: Failed to get AI response {
+  "statusCode": 500,
+  "url": "/api/v1/chat/message",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "message": "Hello I need urgent help"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 06:09:31:931 [ERROR]: AI chat service error {
+  "error": "Request failed with status code 422",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "threadId": "thread_819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4_1755061770720_609uwj",
+  "status": 422,
+  "responseData": {
+    "detail": [
+      {
+        "type": "missing",
+        "loc": [
+          "body",
+          "image_path"
+        ],
+        "msg": "Field required",
+        "input": {
+          "user_id": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+          "thread_id": "thread_819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4_1755061770720_609uwj",
+          "message": "Hello I need urgent help"
+        }
+      }
+    ]
+  }
+}
+2025-08-13 06:09:31:931 [ERROR]: Error occurred: Failed to get AI response {
+  "statusCode": 500,
+  "url": "/api/v1/chat/message",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "message": "Hello I need urgent help"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 06:10:56:1056 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:12:05:125 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:12:23:1223 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:12:38:1238 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:12:46:1246 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:13:35:1335 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:13:54:1354 [ERROR]: Error occurred: column ChatConversation.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-13 06:47:23:4723 [ERROR]: Error occurred: Access token required {
+  "statusCode": 401,
+  "url": "/api/v1/chat/threads",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-08-13 06:56:20:5620 [ERROR]: Send message error {
+  "error": "Cannot read properties of undefined (reading 'getTime')",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'getTime')\n    at ChatController.sendMessage (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/chatController.js:338:60)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-13 06:56:20:5620 [ERROR]: Error occurred: Cannot read properties of undefined (reading 'getTime') {
+  "statusCode": 500,
+  "url": "/api/v1/chat/message",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "message": "Hello, I need help with my pregnancy"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 06:56:41:5641 [ERROR]: Send message error {
+  "error": "notNull Violation: ChatMessage.content cannot be null",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "stack": "SequelizeValidationError: notNull Violation: ChatMessage.content cannot be null\n    at InstanceValidator._validate (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/instance-validator.js:50:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async InstanceValidator._validateAndRunHooks (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/instance-validator.js:60:7)\n    at async InstanceValidator.validate (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/instance-validator.js:54:12)\n    at async model.save (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/model.js:2426:7)\n    at async ChatMessage.create (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/model.js:1362:12)\n    at async ChatController.sendMessage (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/chatController.js:331:25)"
+}
+2025-08-13 06:56:41:5641 [ERROR]: Error occurred: notNull Violation: ChatMessage.content cannot be null {
+  "statusCode": 500,
+  "url": "/api/v1/chat/message",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "message": "Hello, I need help with my pregnancy"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 06:57:00:570 [ERROR]: Send message error {
+  "error": "invalid input syntax for type integer: \"NaN\"",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "stack": "Error\n    at Query.run (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async PostgresQueryInterface.insert (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n    at async model.save (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/model.js:2490:35)\n    at async ChatMessage.create (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/model.js:1362:12)\n    at async ChatController.sendMessage (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/chatController.js:333:25)"
+}
+2025-08-13 06:57:00:570 [ERROR]: Error occurred: invalid input syntax for type integer: "NaN" {
+  "statusCode": 500,
+  "url": "/api/v1/chat/message",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "body": {
+    "message": "Hello, I need help with my pregnancy"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-13 07:02:09:29 [ERROR]: AI chat service error {
+  "error": "timeout of 30000ms exceeded",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "threadId": "thread_819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4_1755064898967_1gdx8j"
+}
+2025-08-14 08:51:59:5159 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-14 23:17:40:1740 [ERROR]: Error occurred: Route /favicon.ico not found {
+  "statusCode": 404,
+  "url": "/favicon.ico",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-08-14 23:34:37:3437 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/audio/connect",
+  "method": "HEAD",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-15 07:14:31:1431 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/threads?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:14:31:1431 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:15:18:1518 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/message",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "message": "Hi"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-15 07:18:48:1848 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/threads?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:18:48:1848 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:19:03:193 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/threads?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:19:03:193 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:29:10:2910 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/threads?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:29:10:2910 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:29:50:2950 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/threads?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:29:50:2950 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:30:36:3036 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:281:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-15 07:30:36:3036 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomom.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-15 07:30:38:3038 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:281:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-15 07:30:38:3038 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "test@imagomom.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-15 07:31:38:3138 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/threads?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 07:31:38:3138 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/chat/conversations?page=1&limit=20",
+  "method": "GET",
+  "ip": "::ffff:172.20.10.3",
+  "userAgent": "ImagoMUm/1 CFNetwork/3826.500.111.2.2 Darwin/24.4.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "20"
+  }
+}
+2025-08-15 09:16:00:160 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-15 09:37:26:3726 [ERROR]: Error occurred: Access token required {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-08-15 09:37:33:3733 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:334:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:186:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-15 09:37:33:3733 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-15 09:37:35:3735 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:334:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:186:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-15 09:37:35:3735 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-15 09:38:05:385 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:334:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:186:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-15 09:38:05:385 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-15 09:38:59:3859 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:334:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:186:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-15 09:38:59:3859 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-15 09:39:00:390 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:334:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:186:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-15 09:39:00:390 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-15 09:39:01:391 [ERROR]: Get scan details error: Validation failed {
+  "statusCode": 400,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Validation failed\n    at getScanDetails (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:334:15)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/src/middleware/errorHandler.js:186:21\n    at newFn (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/router/route.js:149:13)\n    at middleware (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express-validator/lib/middlewares/check.js:16:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-15 09:39:01:391 [ERROR]: Error occurred: Validation failed {
+  "statusCode": 400,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-15 09:42:17:4217 [ERROR]: Get user scans error: column UltrasoundScan.createdAt does not exist {
+  "name": "SequelizeDatabaseError",
+  "parent": {
+    "length": 196,
+    "name": "error",
+    "severity": "ERROR",
+    "code": "42703",
+    "hint": "Perhaps you meant to reference the column \"UltrasoundScan.created_at\".",
+    "position": "1325",
+    "file": "parse_relation.c",
+    "line": "3675",
+    "routine": "errorMissingColumn",
+    "sql": "SELECT \"id\", \"user_id\" AS \"userId\", \"original_file_name\" AS \"originalFileName\", \"file_name\" AS \"fileName\", \"file_path\" AS \"filePath\", \"file_size\" AS \"fileSize\", \"mime_type\" AS \"mimeType\", \"file_hash\" AS \"fileHash\", \"cloud_url\" AS \"cloudUrl\", \"cloud_blob_name\" AS \"cloudBlobName\", \"scan_type\" AS \"scanType\", \"gestational_age\" AS \"gestationalAge\", \"scan_date\" AS \"scanDate\", \"notes\", \"ai_analysis_status\" AS \"aiAnalysisStatus\", \"ai_analysis_result\" AS \"aiAnalysisResult\", \"ai_confidence_score\" AS \"aiConfidenceScore\", \"ai_findings\" AS \"aiFindings\", \"ai_recommendations\" AS \"aiRecommendations\", \"ai_processing_time\" AS \"aiProcessingTime\", \"ai_model_version\" AS \"aiModelVersion\", \"ai_error_message\" AS \"aiErrorMessage\", \"ai_processing_started_at\" AS \"aiProcessingStartedAt\", \"ai_processing_completed_at\" AS \"aiProcessingCompletedAt\", \"medical_review_status\" AS \"medicalReviewStatus\", \"reviewed_by\" AS \"reviewedBy\", \"reviewed_at\" AS \"reviewedAt\", \"review_notes\" AS \"reviewNotes\", \"is_archived\" AS \"isArchived\", \"retention_policy\" AS \"retentionPolicy\", \"view_count\" AS \"viewCount\", \"last_viewed_at\" AS \"lastViewedAt\", \"created_at\", \"updated_at\", \"deleted_at\" FROM \"ultrasound_scans\" AS \"UltrasoundScan\" WHERE (\"UltrasoundScan\".\"deleted_at\" IS NULL AND \"UltrasoundScan\".\"user_id\" = '819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4') ORDER BY \"UltrasoundScan\".\"createdAt\" DESC LIMIT 10 OFFSET 0;"
+  },
+  "original": {
+    "length": 196,
+    "name": "error",
+    "severity": "ERROR",
+    "code": "42703",
+    "hint": "Perhaps you meant to reference the column \"UltrasoundScan.created_at\".",
+    "position": "1325",
+    "file": "parse_relation.c",
+    "line": "3675",
+    "routine": "errorMissingColumn",
+    "sql": "SELECT \"id\", \"user_id\" AS \"userId\", \"original_file_name\" AS \"originalFileName\", \"file_name\" AS \"fileName\", \"file_path\" AS \"filePath\", \"file_size\" AS \"fileSize\", \"mime_type\" AS \"mimeType\", \"file_hash\" AS \"fileHash\", \"cloud_url\" AS \"cloudUrl\", \"cloud_blob_name\" AS \"cloudBlobName\", \"scan_type\" AS \"scanType\", \"gestational_age\" AS \"gestationalAge\", \"scan_date\" AS \"scanDate\", \"notes\", \"ai_analysis_status\" AS \"aiAnalysisStatus\", \"ai_analysis_result\" AS \"aiAnalysisResult\", \"ai_confidence_score\" AS \"aiConfidenceScore\", \"ai_findings\" AS \"aiFindings\", \"ai_recommendations\" AS \"aiRecommendations\", \"ai_processing_time\" AS \"aiProcessingTime\", \"ai_model_version\" AS \"aiModelVersion\", \"ai_error_message\" AS \"aiErrorMessage\", \"ai_processing_started_at\" AS \"aiProcessingStartedAt\", \"ai_processing_completed_at\" AS \"aiProcessingCompletedAt\", \"medical_review_status\" AS \"medicalReviewStatus\", \"reviewed_by\" AS \"reviewedBy\", \"reviewed_at\" AS \"reviewedAt\", \"review_notes\" AS \"reviewNotes\", \"is_archived\" AS \"isArchived\", \"retention_policy\" AS \"retentionPolicy\", \"view_count\" AS \"viewCount\", \"last_viewed_at\" AS \"lastViewedAt\", \"created_at\", \"updated_at\", \"deleted_at\" FROM \"ultrasound_scans\" AS \"UltrasoundScan\" WHERE (\"UltrasoundScan\".\"deleted_at\" IS NULL AND \"UltrasoundScan\".\"user_id\" = '819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4') ORDER BY \"UltrasoundScan\".\"createdAt\" DESC LIMIT 10 OFFSET 0;"
+  },
+  "sql": "SELECT \"id\", \"user_id\" AS \"userId\", \"original_file_name\" AS \"originalFileName\", \"file_name\" AS \"fileName\", \"file_path\" AS \"filePath\", \"file_size\" AS \"fileSize\", \"mime_type\" AS \"mimeType\", \"file_hash\" AS \"fileHash\", \"cloud_url\" AS \"cloudUrl\", \"cloud_blob_name\" AS \"cloudBlobName\", \"scan_type\" AS \"scanType\", \"gestational_age\" AS \"gestationalAge\", \"scan_date\" AS \"scanDate\", \"notes\", \"ai_analysis_status\" AS \"aiAnalysisStatus\", \"ai_analysis_result\" AS \"aiAnalysisResult\", \"ai_confidence_score\" AS \"aiConfidenceScore\", \"ai_findings\" AS \"aiFindings\", \"ai_recommendations\" AS \"aiRecommendations\", \"ai_processing_time\" AS \"aiProcessingTime\", \"ai_model_version\" AS \"aiModelVersion\", \"ai_error_message\" AS \"aiErrorMessage\", \"ai_processing_started_at\" AS \"aiProcessingStartedAt\", \"ai_processing_completed_at\" AS \"aiProcessingCompletedAt\", \"medical_review_status\" AS \"medicalReviewStatus\", \"reviewed_by\" AS \"reviewedBy\", \"reviewed_at\" AS \"reviewedAt\", \"review_notes\" AS \"reviewNotes\", \"is_archived\" AS \"isArchived\", \"retention_policy\" AS \"retentionPolicy\", \"view_count\" AS \"viewCount\", \"last_viewed_at\" AS \"lastViewedAt\", \"created_at\", \"updated_at\", \"deleted_at\" FROM \"ultrasound_scans\" AS \"UltrasoundScan\" WHERE (\"UltrasoundScan\".\"deleted_at\" IS NULL AND \"UltrasoundScan\".\"user_id\" = '819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4') ORDER BY \"UltrasoundScan\".\"createdAt\" DESC LIMIT 10 OFFSET 0;",
+  "parameters": {},
+  "stack": "Error\n    at Query.run (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)\n    at /Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async PostgresQueryInterface.select (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n    at async UltrasoundScan.findAll (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/model.js:1140:21)\n    at async Promise.all (index 1)\n    at async UltrasoundScan.findAndCountAll (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/sequelize/lib/model.js:1322:27)\n    at async getUserScans (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/ultrasoundController.js:300:50)"
+}
+2025-08-15 09:42:17:4217 [ERROR]: Error occurred: column UltrasoundScan.createdAt does not exist {
+  "statusCode": 500,
+  "url": "/api/v1/ultrasounds",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "params": {},
+  "query": {}
+}
+2025-08-15 10:04:06:46 [ERROR]: Error occurred: Access token required {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/8bdbc18f-8df6-4f16-a5cb-09af1a8f5f54",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-08-20 07:54:30:5430 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "::",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at Server.listen (node:net:2101:7)\n    at Function.listen (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/application.js:635:24)\n    at startServer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/server.js:30:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-20 07:58:00:580 [ERROR]: Error occurred: Token expired {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/937fc594-0613-47c1-9424-7900c659ffbd",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-08-20 08:06:47:647 [ERROR]: Error occurred: Route / not found {
+  "statusCode": 404,
+  "url": "/",
+  "method": "GET",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-08-20 08:16:16:1616 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "::",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at Server.listen (node:net:2101:7)\n    at Function.listen (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/application.js:635:24)\n    at startServer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/server.js:30:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-20 13:13:57:1357 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "::",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at Server.listen (node:net:2101:7)\n    at Function.listen (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/application.js:635:24)\n    at startServer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/server.js:30:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-20 13:14:46:1446 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::3000 {
+  "code": "EADDRINUSE",
+  "errno": -48,
+  "syscall": "listen",
+  "address": "::",
+  "port": 3000,
+  "stack": "Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1939:16)\n    at listenInCluster (node:net:1996:12)\n    at Server.listen (node:net:2101:7)\n    at Function.listen (/Users/theaceman/Documents/cambiar_projects/imagomum-be/node_modules/express/lib/application.js:635:24)\n    at startServer (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/server.js:30:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
