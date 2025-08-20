@@ -7,7 +7,7 @@ const azureStorageService = require('./services/azureStorageService');
 const audioWebSocketService = require('./services/audioWebSocketService');
 const logger = require('./utils/logger');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 let server;
@@ -15,21 +15,30 @@ let server;
 // Start the server
 async function startServer() {
   try {
+    logger.info('🚀 Starting Imagomum Backend Server...');
+    logger.info(`📊 Environment: ${NODE_ENV}`);
+    logger.info(`🔌 Port: ${PORT}`);
+    
     // Connect to database
+    logger.info('🔗 Connecting to database...');
     await connectToDatabase();
 
     // Initialize Azure Storage
+    logger.info('☁️ Initializing Azure Storage...');
     if (azureStorageService.isConfigured()) {
       await azureStorageService.initializeContainer();
-      logger.info('☁️ Azure Storage initialized successfully');
+      logger.info('✅ Azure Storage initialized successfully');
     } else {
       logger.info('📁 Azure Storage not configured, using local file storage');
     }
 
     // Start the HTTP server
-    server = app.listen(PORT, () => {
+    logger.info(`🌐 Starting HTTP server on port ${PORT}...`);
+    server = app.listen(PORT, '0.0.0.0', () => {
       logger.info(`🚀 Imagomum Backend Server running on port ${PORT} in ${NODE_ENV} mode`);
       logger.info(`📚 API Documentation available at http://localhost:${PORT}/api-docs`);
+      logger.info(`🏥 Health check available at http://localhost:${PORT}/health`);
+      logger.info(`🌍 External access: http://0.0.0.0:${PORT}`);
     });
 
     // Initialize WebSocket server for audio
@@ -40,8 +49,11 @@ async function startServer() {
     process.on('SIGTERM', gracefulShutdown);
     process.on('SIGINT', gracefulShutdown);
 
+    logger.info('✅ Server startup completed successfully');
+
   } catch (error) {
-    logger.error('Failed to start server:', error);
+    logger.error('❌ Failed to start server:', error);
+    logger.error('Stack trace:', error.stack);
     process.exit(1);
   }
 }
