@@ -14,6 +14,13 @@ class EmailService {
       const emailUser = process.env.EMAIL_USER;
       const emailPass = process.env.EMAIL_PASSWORD;
       
+      // Debug logging
+      logger.info('📧 Email service initialization:', {
+        hasEmailUser: !!emailUser,
+        hasEmailPass: !!emailPass,
+        emailUser: emailUser ? emailUser.substring(0, 5) + '***' : 'undefined'
+      });
+      
       if (!emailUser || !emailPass) {
         logger.warn('📧 Email credentials not configured. Using mock email service.');
         return;
