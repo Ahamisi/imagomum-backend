@@ -21,7 +21,19 @@ async function startServer() {
     
     // Connect to database
     logger.info('🔗 Connecting to database...');
-    await connectToDatabase();
+    try {
+      await connectToDatabase();
+      logger.info('✅ Database connected successfully');
+      
+      // Sync database models (create tables if they don't exist)
+      logger.info('🔄 Syncing database models...');
+      await sequelize.sync({ alter: false });
+      logger.info('✅ Database models synced successfully');
+    } catch (dbError) {
+      logger.error('❌ Database connection failed:', dbError.message);
+      logger.error('Stack:', dbError.stack);
+      throw dbError;
+    }
 
     // Initialize Azure Storage
     logger.info('☁️ Initializing Azure Storage...');
