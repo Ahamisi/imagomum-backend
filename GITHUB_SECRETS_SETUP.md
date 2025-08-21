@@ -35,7 +35,22 @@ DefaultEndpointsProtocol=https;AccountName=ultrasoundimageupload;AccountKey=jPFk
 https://imagomum-app.agreeablebeach-10200fd5.eastus2.azurecontainerapps.io
 ```
 
-### **7. AZURE_CREDENTIALS** (Service Principal)
+### **7. REFRESH_TOKEN_SECRET**
+```
+kGCdHo+SfgEkKYaYHf6sxghDDBerfdR3JjAWC7hgOiw=
+```
+
+### **8. EMAIL_USER**
+```
+imageofmum@gmail.com
+```
+
+### **9. EMAIL_PASSWORD**
+```
+djjemkuojasqalkx
+```
+
+### **10. AZURE_CREDENTIALS** (Service Principal)
 **You need to create this by running in Azure Cloud Shell:**
 ```bash
 az ad sp create-for-rbac --name "imagomum-deploy" --role contributor --scopes /subscriptions/YOUR_SUBSCRIPTION_ID/resourceGroups/Imago-mum --sdk-auth
