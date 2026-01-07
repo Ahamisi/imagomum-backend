@@ -3,6 +3,8 @@ const { body } = require('express-validator');
 const authController = require('../controllers/authController');
 const { asyncHandler } = require('../middleware/errorHandler');
 const auth = require('../middleware/auth');
+const emailService = require('../services/emailService');
+const logger = require('../utils/logger');
 
 const router = express.Router();
 
@@ -434,5 +436,79 @@ router.post('/reset-password', [
   body('token').notEmpty(),
   body('password').isLength({ min: 8 }).matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]/)
 ], asyncHandler(authController.resetPassword));
+
+/**
+ * @swagger
+ * /api/v1/auth/test-email:
+ *   post:
+ *     summary: Test email service
+ *     description: Send a test email to verify email service configuration
+ *     tags: [Authentication]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 example: test@example.com
+ *     responses:
+ *       200:
+ *         description: Email test completed
+ *       400:
+ *         description: Invalid request
+ *       500:
+ *         description: Server error
+ */
+router.post('/test-email', [
+  body('email').isEmail().withMessage('Valid email is required')
+], asyncHandler(async (req, res) => {
+  try {
+    const { email } = req.body;
+    
+    logger.info('Testing email service via auth route', { email });
+
+    // Send test OTP
+    const testOTP = '123456';
+    const result = await emailService.sendOTP(email, testOTP, 'Test User');
+    
+    // Check email service configuration
+    const isConfigured = emailService.isConfigured();
+    
+    res.status(200).json({
+      status: 'success',
+      message: 'Email test completed',
+      data: {
+        email,
+        emailServiceConfigured: isConfigured,
+        emailSent: result.success,
+        messageId: result.messageId || null,
+        error: result.error || null,
+        mock: result.mock || false,
+        fallback: result.fallback || false,
+        accepted: result.accepted || null,
+        environment: {
+          NODE_ENV: process.env.NODE_ENV,
+          hasEmailUser: !!process.env.EMAIL_USER,
+          hasEmailPassword: !!process.env.EMAIL_PASSWORD,
+          emailUser: process.env.EMAIL_USER ? process.env.EMAIL_USER.substring(0, 5) + '***' : 'undefined'
+        }
+      }
+    });
+
+  } catch (error) {
+    logger.error('Email test error:', error);
+    res.status(500).json({
+      status: 'error',
+      message: 'Email test failed',
+      error: error.message
+    });
+  }
+}));
 
 module.exports = router; 
