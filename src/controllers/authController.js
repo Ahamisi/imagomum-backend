@@ -7,6 +7,7 @@ const { ValidationError, ConflictError, AuthenticationError, NotFoundError } = r
 const logger = require('../utils/logger');
 const User = require('../models/User');
 const emailService = require('../services/emailService');
+const { normalizeEmail, hasEmailAlias, getEmailAlias } = require('../utils/emailUtils');
 
 // Generate 6-digit OTP
 const generateOTP = () => {
@@ -80,7 +81,7 @@ const authController = {
     const { fullName, email, phoneNumber, password, confirmPassword } = req.body;
 
     try {
-      // Check if user already exists
+      // Check if user already exists (using exact email - aliases are treated as different emails)
       const existingUser = await User.findOne({
         where: {
           [Op.or]: [
@@ -107,7 +108,7 @@ const authController = {
       const otp = generateOTP();
       const otpExpiresAt = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes from now
 
-      // Create user in database
+      // Create user in database - each email (including aliases) creates a separate account
       const newUser = await User.create({
         fullName,
         email,
@@ -118,6 +119,15 @@ const authController = {
         isVerified: false,
         isActive: false
       });
+      
+      // Log email alias usage for analytics (but treat as separate account)
+      if (hasEmailAlias(email)) {
+        logger.info('User signed up with email alias (separate account)', {
+          userId: newUser.id,
+          email: email,
+          alias: getEmailAlias(email)
+        });
+      }
 
       // Send OTP
       await sendOTP(email, phoneNumber, otp, fullName);

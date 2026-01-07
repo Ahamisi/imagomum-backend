@@ -17,6 +17,7 @@ const ultrasoundRoutes = require('./routes/ultrasounds');
 const appointmentRoutes = require('./routes/appointments');
 const onboardingRoutes = require('./routes/onboarding');
 const chatRoutes = require('./routes/chat');
+const testRoutes = require('./routes/test');
 
 const app = express();
 
@@ -154,6 +155,7 @@ app.use(`/api/${API_VERSION}/ultrasounds`, ultrasoundRoutes);
 app.use(`/api/${API_VERSION}/appointments`, appointmentRoutes);
 app.use(`/api/${API_VERSION}/onboarding`, onboardingRoutes);
 app.use(`/api/${API_VERSION}/chat`, chatRoutes);
+app.use(`/api/${API_VERSION}/test`, testRoutes);
 
 // API base route
 app.get(`/api/${API_VERSION}`, (req, res) => {
@@ -168,7 +170,8 @@ app.get(`/api/${API_VERSION}`, (req, res) => {
       ultrasounds: `/api/${API_VERSION}/ultrasounds`,
       appointments: `/api/${API_VERSION}/appointments`,
       onboarding: `/api/${API_VERSION}/onboarding`,
-      chat: `/api/${API_VERSION}/chat`
+      chat: `/api/${API_VERSION}/chat`,
+      test: `/api/${API_VERSION}/test`
     }
   });
 });

@@ -8524,3 +8524,330 @@
 2025-08-20 20:28:16:2816 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
 2025-08-20 20:28:16:2816 [INFO]: 🏥 Health check available at http://localhost:3000/health 
 2025-08-20 20:28:16:2816 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 20:31:38:3138 [WARN]: 📧 Email credentials not configured. Using mock email service. 
+2025-08-20 20:31:39:3139 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 20:31:39:3139 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 20:31:39:3139 [INFO]: 📊 Environment: development 
+2025-08-20 20:31:39:3139 [INFO]: 🔌 Port: 3000 
+2025-08-20 20:31:39:3139 [INFO]: 🔗 Connecting to database... 
+2025-08-20 20:31:39:3139 [INFO]: Database connected successfully 
+2025-08-20 20:31:39:3139 [INFO]: ✅ Database connected successfully 
+2025-08-20 20:31:39:3139 [INFO]: 🔄 Syncing database models... 
+2025-08-20 20:31:39:3139 [INFO]: ✅ Database models synced successfully 
+2025-08-20 20:31:39:3139 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 20:31:40:3140 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 20:31:40:3140 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 20:31:40:3140 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 20:31:40:3140 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 20:31:40:3140 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 20:31:40:3140 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 20:31:40:3140 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 20:31:40:3140 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 20:31:40:3140 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 21:01:17:117 [INFO]: 📧 Email service initialization: {
+  "hasEmailUser": true,
+  "hasEmailPass": true,
+  "emailUser": "image***"
+}
+2025-08-20 21:01:17:117 [ERROR]: ❌ Failed to initialize email service: nodemailer.createTransporter is not a function {
+  "stack": "TypeError: nodemailer.createTransporter is not a function\n    at EmailService.initializeTransporter (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/services/emailService.js:30:37)\n    at new EmailService (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/services/emailService.js:8:10)\n    at Object.<anonymous> (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/services/emailService.js:179:18)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)"
+}
+2025-08-20 21:01:17:117 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 21:01:18:118 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 21:01:18:118 [INFO]: 📊 Environment: development 
+2025-08-20 21:01:18:118 [INFO]: 🔌 Port: 3000 
+2025-08-20 21:01:18:118 [INFO]: 🔗 Connecting to database... 
+2025-08-20 21:01:18:118 [INFO]: Database connected successfully 
+2025-08-20 21:01:18:118 [INFO]: ✅ Database connected successfully 
+2025-08-20 21:01:18:118 [INFO]: 🔄 Syncing database models... 
+2025-08-20 21:01:18:118 [INFO]: ✅ Database models synced successfully 
+2025-08-20 21:01:18:118 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 21:01:19:119 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 21:01:19:119 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 21:01:19:119 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 21:01:19:119 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 21:01:19:119 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 21:01:19:119 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 21:01:19:119 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 21:01:19:119 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 21:01:19:119 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-20 21:08:10:810 [INFO]: 📧 Email service initialization: {
+  "hasEmailUser": true,
+  "hasEmailPass": true,
+  "emailUser": "image***"
+}
+2025-08-20 21:08:10:810 [ERROR]: ❌ Failed to initialize email service: nodemailer.createTransporter is not a function {
+  "stack": "TypeError: nodemailer.createTransporter is not a function\n    at EmailService.initializeTransporter (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/services/emailService.js:30:37)\n    at new EmailService (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/services/emailService.js:8:10)\n    at Object.<anonymous> (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/services/emailService.js:179:18)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)"
+}
+2025-08-20 21:08:10:810 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-20 21:08:10:810 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-20 21:08:10:810 [INFO]: 📊 Environment: development 
+2025-08-20 21:08:10:810 [INFO]: 🔌 Port: 3000 
+2025-08-20 21:08:10:810 [INFO]: 🔗 Connecting to database... 
+2025-08-20 21:08:10:810 [INFO]: Database connected successfully 
+2025-08-20 21:08:10:810 [INFO]: ✅ Database connected successfully 
+2025-08-20 21:08:10:810 [INFO]: 🔄 Syncing database models... 
+2025-08-20 21:08:10:810 [INFO]: ✅ Database models synced successfully 
+2025-08-20 21:08:10:810 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-20 21:08:11:811 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-20 21:08:11:811 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-20 21:08:11:811 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-20 21:08:11:811 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-20 21:08:11:811 [INFO]: ✅ Server startup completed successfully 
+2025-08-20 21:08:11:811 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-20 21:08:11:811 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-20 21:08:11:811 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-20 21:08:11:811 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-21 03:03:22:322 [INFO]: Received SIGINT. Starting graceful shutdown... 
+2025-08-21 04:19:39:1939 [INFO]: 📧 Email service initialization: {
+  "hasEmailUser": true,
+  "hasEmailPass": true,
+  "emailUser": "image***"
+}
+2025-08-21 04:19:39:1939 [INFO]: 📧 Email service initialized successfully 
+2025-08-21 04:19:40:1940 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-21 04:19:40:1940 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-21 04:19:40:1940 [INFO]: 📊 Environment: development 
+2025-08-21 04:19:40:1940 [INFO]: 🔌 Port: 3000 
+2025-08-21 04:19:40:1940 [INFO]: 🔗 Connecting to database... 
+2025-08-21 04:19:40:1940 [INFO]: Database connected successfully 
+2025-08-21 04:19:40:1940 [INFO]: ✅ Database connected successfully 
+2025-08-21 04:19:40:1940 [INFO]: 🔄 Syncing database models... 
+2025-08-21 04:19:40:1940 [INFO]: ✅ Database models synced successfully 
+2025-08-21 04:19:40:1940 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-21 04:19:43:1943 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-21 04:19:43:1943 [INFO]: 🌐 Starting HTTP server on port 3000... 
+2025-08-21 04:19:43:1943 [INFO]: Audio WebSocket server initialized on /ws/transcribe 
+2025-08-21 04:19:43:1943 [INFO]: 🎧 Audio WebSocket server initialized on ws://localhost:3000/api/v1/chat/audio 
+2025-08-21 04:19:43:1943 [INFO]: ✅ Server startup completed successfully 
+2025-08-21 04:19:43:1943 [INFO]: 🚀 Imagomum Backend Server running on port 3000 in development mode 
+2025-08-21 04:19:43:1943 [INFO]: 📚 API Documentation available at http://localhost:3000/api-docs 
+2025-08-21 04:19:43:1943 [INFO]: 🏥 Health check available at http://localhost:3000/health 
+2025-08-21 04:19:43:1943 [INFO]: 🌍 External access: http://0.0.0.0:3000 
+2025-08-21 04:20:45:2045 [ERROR]: Resend OTP error: User not found {
+  "statusCode": 404,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: User not found\n    at resendOTP (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:253:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-21 04:20:45:2045 [ERROR]: Error occurred: User not found {
+  "statusCode": 404,
+  "url": "/api/v1/auth/resend-otp",
+  "method": "POST",
+  "ip": "127.0.0.1",
+  "userAgent": "curl/8.7.1",
+  "userId": "anonymous",
+  "body": {
+    "email": "ahamisivickzyjr@gmail.com"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-21 04:20:45:2045 [INFO]: 127.0.0.1 - - [21/Aug/2025:03:20:45 +0000] "POST /api/v1/auth/resend-otp HTTP/1.1" 404 174 "-" "curl/8.7.1" 
+2025-08-21 04:20:54:2054 [ERROR]: Signup error: User with this phone number already exists {
+  "statusCode": 409,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: User with this phone number already exists\n    at signup (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:98:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-21 04:20:54:2054 [ERROR]: Error occurred: User with this phone number already exists {
+  "statusCode": 409,
+  "url": "/api/v1/auth/signup",
+  "method": "POST",
+  "ip": "127.0.0.1",
+  "userAgent": "curl/8.7.1",
+  "userId": "anonymous",
+  "body": {
+    "fullName": "Test Email User",
+    "email": "ahamisivickzyjr@gmail.com",
+    "phoneNumber": "1234567890",
+    "password": "Test@123",
+    "confirmPassword": "Test@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-21 04:20:54:2054 [INFO]: 127.0.0.1 - - [21/Aug/2025:03:20:54 +0000] "POST /api/v1/auth/signup HTTP/1.1" 409 230 "-" "curl/8.7.1" 
+2025-08-21 04:21:05:215 [INFO]: 📧 OTP email sent successfully {
+  "email": "testemaillocal@gmail.com",
+  "messageId": "<787cb7da-6aaf-6b60-3f56-6b2c2635a01e@gmail.com>"
+}
+2025-08-21 04:21:05:215 [INFO]: OTP sent {
+  "email": "testemaillocal@gmail.com",
+  "phoneNumber": "9999999999",
+  "emailSent": true,
+  "mock": false
+}
+2025-08-21 04:21:05:215 [INFO]: SYSTEM_EVENT {
+  "event": "USER_SIGNUP_INITIATED",
+  "userId": "2ff7c6b4-4599-4e60-9bff-1b09812473c6",
+  "email": "testemaillocal@gmail.com",
+  "phoneNumber": "9999999999",
+  "fullName": "Test Email User"
+}
+2025-08-21 04:21:05:215 [INFO]: 127.0.0.1 - - [21/Aug/2025:03:21:05 +0000] "POST /api/v1/auth/signup HTTP/1.1" 201 261 "-" "curl/8.7.1" 
+2025-08-21 04:22:02:222 [INFO]: 📧 OTP email sent successfully {
+  "email": "ahamisivickzyjr@gmail.com",
+  "messageId": "<a6e68f0a-f0f6-b93e-e4d8-267dc33265b0@gmail.com>"
+}
+2025-08-21 04:22:02:222 [INFO]: OTP sent {
+  "email": "ahamisivickzyjr@gmail.com",
+  "phoneNumber": "8888888888",
+  "emailSent": true,
+  "mock": false
+}
+2025-08-21 04:22:02:222 [INFO]: SYSTEM_EVENT {
+  "event": "USER_SIGNUP_INITIATED",
+  "userId": "8292ce56-ac35-46e4-95f8-c8dcde677439",
+  "email": "ahamisivickzyjr@gmail.com",
+  "phoneNumber": "8888888888",
+  "fullName": "Godsfavour Test"
+}
+2025-08-21 04:22:02:222 [INFO]: 127.0.0.1 - - [21/Aug/2025:03:22:02 +0000] "POST /api/v1/auth/signup HTTP/1.1" 201 262 "-" "curl/8.7.1" 
+2025-08-22 09:55:56:5556 [ERROR]: Error occurred: Invalid token {
+  "statusCode": 401,
+  "url": "/api/v1/users/profile",
+  "method": "GET",
+  "ip": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-08-22 09:55:56:5556 [INFO]: 127.0.0.1 - - [22/Aug/2025:08:55:56 +0000] "GET /api/v1/users/profile HTTP/1.1" 401 172 "-" "PostmanRuntime/7.45.0" 
+2025-08-22 10:41:37:4137 [INFO]: 📧 Email service initialization: {
+  "hasEmailUser": true,
+  "hasEmailPass": true,
+  "emailUser": "image***"
+}
+2025-08-22 10:41:37:4137 [INFO]: 📧 Email service initialized successfully 
+2025-08-22 10:41:37:4137 [INFO]: Azure Storage service initialized successfully {
+  "containerName": "ultrasound-images"
+}
+2025-08-22 10:41:37:4137 [INFO]: 🚀 Starting Imagomum Backend Server... 
+2025-08-22 10:41:37:4137 [INFO]: 📊 Environment: development 
+2025-08-22 10:41:37:4137 [INFO]: 🔌 Port: 3000 
+2025-08-22 10:41:37:4137 [INFO]: 🔗 Connecting to database... 
+2025-08-22 10:41:37:4137 [INFO]: Database connected successfully 
+2025-08-22 10:41:37:4137 [INFO]: ✅ Database connected successfully 
+2025-08-22 10:41:37:4137 [INFO]: 🔄 Syncing database models... 
+2025-08-22 10:41:37:4137 [INFO]: ✅ Database models synced successfully 
+2025-08-22 10:41:37:4137 [INFO]: ☁️ Initializing Azure Storage... 
+2025-08-22 10:41:39:4139 [INFO]: ✅ Azure Storage initialized successfully 
+2025-08-22 10:44:16:4416 [ERROR]: Error occurred: Invalid token {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/upload",
+  "method": "POST",
+  "ip": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2025-08-22 10:44:16:4416 [INFO]: 127.0.0.1 - - [22/Aug/2025:09:44:16 +0000] "POST /api/v1/ultrasounds/upload HTTP/1.1" 401 172 "-" "PostmanRuntime/7.45.0" 
+2025-08-22 10:44:41:4441 [ERROR]: Login error: Invalid email or password {
+  "statusCode": 401,
+  "isOperational": true,
+  "status": "fail",
+  "stack": "Error: Invalid email or password\n    at login (/Users/theaceman/Documents/cambiar_projects/imagomum-be/src/controllers/authController.js:308:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-08-22 10:44:41:4441 [ERROR]: Error occurred: Invalid email or password {
+  "statusCode": 401,
+  "url": "/api/v1/auth/login",
+  "method": "POST",
+  "ip": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "body": {
+    "email": "ahamisiaceman@gmail.com",
+    "password": "Pass@123"
+  },
+  "params": {},
+  "query": {}
+}
+2025-08-22 10:44:41:4441 [INFO]: 127.0.0.1 - - [22/Aug/2025:09:44:41 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 196 "-" "PostmanRuntime/7.45.0" 
+2025-08-22 10:44:57:4457 [INFO]: 📧 OTP email sent successfully {
+  "email": "theaceman5000@gmail.com",
+  "messageId": "<1082bf87-ca84-d736-3482-2acc83f5bed3@gmail.com>"
+}
+2025-08-22 10:44:57:4457 [INFO]: OTP sent {
+  "email": "theaceman5000@gmail.com",
+  "phoneNumber": "08080957682",
+  "emailSent": true,
+  "mock": false
+}
+2025-08-22 10:44:57:4457 [INFO]: SYSTEM_EVENT {
+  "event": "USER_SIGNUP_INITIATED",
+  "userId": "a492ff43-8005-486a-b316-cd1593788a5d",
+  "email": "theaceman5000@gmail.com",
+  "phoneNumber": "08080957682",
+  "fullName": "Chioma Obi"
+}
+2025-08-22 10:44:57:4457 [INFO]: 127.0.0.1 - - [22/Aug/2025:09:44:57 +0000] "POST /api/v1/auth/signup HTTP/1.1" 201 261 "-" "PostmanRuntime/7.45.0" 
+2025-08-22 10:45:15:4515 [INFO]: SYSTEM_EVENT {
+  "event": "USER_LOGIN_SUCCESS",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "email": "test@imagomum.com",
+  "ip": "127.0.0.1"
+}
+2025-08-22 10:45:15:4515 [INFO]: 127.0.0.1 - - [22/Aug/2025:09:45:15 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 790 "-" "PostmanRuntime/7.45.0" 
+2025-08-22 10:45:33:4533 [INFO]: File uploaded to Azure Storage successfully {
+  "blobName": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4/1755855931564-d4548809f058d965.jpg",
+  "publicUrl": "https://ultrasoundimageupload.blob.core.windows.net/ultrasound-images/819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4/1755855931564-d4548809f058d965.jpg",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "originalFileName": "PHOTO-2025-08-18-12-47-12.jpg"
+}
+2025-08-22 10:45:33:4533 [INFO]: SYSTEM_EVENT {
+  "event": "ULTRASOUND_SCAN_UPLOADED",
+  "userId": "819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4",
+  "scanId": "bbdc6256-c768-4708-8090-93a5238e0452",
+  "fileName": "PHOTO-2025-08-18-12-47-12.jpg",
+  "fileSize": 33436,
+  "scanType": "2D",
+  "cloudUrl": "https://ultrasoundimageupload.blob.core.windows.net/ultrasound-images/819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4/1755855931564-d4548809f058d965.jpg"
+}
+2025-08-22 10:45:33:4533 [INFO]: 127.0.0.1 - - [22/Aug/2025:09:45:33 +0000] "POST /api/v1/ultrasounds/upload HTTP/1.1" 201 321 "-" "PostmanRuntime/7.45.0" 
+2025-08-22 10:45:33:4533 [INFO]: Starting AI analysis for scan {
+  "scanId": "bbdc6256-c768-4708-8090-93a5238e0452"
+}
+2025-08-22 10:45:33:4533 [INFO]: Starting AI analysis {
+  "filePath": "https://ultrasoundimageupload.blob.core.windows.net/ultrasound-images/819a2f7a-b61b-41a9-bb39-df1eb4ec5ff4/[filename]",
+  "metadata": {
+    "gestationalAge": "10 weeks",
+    "scanType": "2D",
+    "scanDate": "2025-08-22"
+  }
+}
+2025-08-22 10:45:50:4550 [ERROR]: Error occurred: Invalid token {
+  "statusCode": 401,
+  "url": "/api/v1/ultrasounds/2f316a9d-41c7-4a08-b053-0eacd3e75628",
+  "method": "GET",
+  "ip": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.45.0",
+  "userId": "anonymous",
+  "params": {},
+  "query": {}
+}
+2025-08-22 10:45:50:4550 [INFO]: 127.0.0.1 - - [22/Aug/2025:09:45:50 +0000] "GET /api/v1/ultrasounds/2f316a9d-41c7-4a08-b053-0eacd3e75628 HTTP/1.1" 401 172 "-" "PostmanRuntime/7.45.0" 
+2025-08-22 10:45:52:4552 [INFO]: AI analysis completed successfully {
+  "processingTime": 18548,
+  "success": true,
+  "analysisId": "f6353095-782b-457e-b1b8-18fb5f71e7db"
+}
+2025-08-22 10:45:52:4552 [INFO]: SYSTEM_EVENT {
+  "event": "AI_ANALYSIS_COMPLETED",
+  "scanId": "bbdc6256-c768-4708-8090-93a5238e0452",
+  "processingTime": 18548,
+  "confidenceScore": 0.8,
+  "riskLevel": "high"
+}
+2025-08-22 10:46:37:4637 [INFO]: 127.0.0.1 - - [22/Aug/2025:09:46:37 +0000] "GET /api/v1/ultrasounds/bbdc6256-c768-4708-8090-93a5238e0452 HTTP/1.1" 200 - "-" "PostmanRuntime/7.45.0" 

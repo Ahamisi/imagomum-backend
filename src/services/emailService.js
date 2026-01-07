@@ -46,9 +46,18 @@ class EmailService {
     try {
       if (!this.initialized) {
         // Mock implementation for development
-        logger.info(`📧 [MOCK] OTP Email to ${email}: ${otp}`);
-        console.log(`\n🔐 OTP for ${email}: ${otp}\n`);
-        return { success: true, mock: true };
+        logger.warn(`📧 [MOCK] Email service not initialized - OTP Email to ${email}: ${otp}`);
+        console.log(`\n🔐 [MOCK] OTP for ${email}: ${otp}\n`);
+        return { success: false, mock: true, error: 'Email service not initialized' };
+      }
+
+      // Test transporter connection before sending
+      try {
+        await this.transporter.verify();
+        logger.info('📧 Email transporter verified successfully');
+      } catch (verifyError) {
+        logger.error('❌ Email transporter verification failed:', verifyError);
+        throw new Error(`Email service verification failed: ${verifyError.message}`);
       }
 
       const mailOptions = {
@@ -96,12 +105,19 @@ class EmailService {
       const result = await this.transporter.sendMail(mailOptions);
       logger.info('📧 OTP email sent successfully', { 
         email, 
-        messageId: result.messageId 
+        messageId: result.messageId,
+        accepted: result.accepted,
+        rejected: result.rejected
       });
       
-      return { success: true, messageId: result.messageId };
+      return { success: true, messageId: result.messageId, accepted: result.accepted };
     } catch (error) {
-      logger.error('❌ Failed to send OTP email:', error);
+      logger.error('❌ Failed to send OTP email:', {
+        error: error.message,
+        code: error.code,
+        command: error.command,
+        email: email
+      });
       
       // Fallback to console logging
       console.log(`\n🔐 [FALLBACK] OTP for ${email}: ${otp}\n`);
