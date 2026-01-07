@@ -511,4 +511,79 @@ router.post('/test-email', [
   }
 }));
 
+/**
+ * @swagger
+ * /api/v1/auth/debug-user:
+ *   post:
+ *     summary: Debug user existence
+ *     description: Check if user exists with given email (for debugging)
+ *     tags: [Authentication]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *     responses:
+ *       200:
+ *         description: Debug info returned
+ */
+router.post('/debug-user', [
+  body('email').isEmail().withMessage('Valid email is required')
+], asyncHandler(async (req, res) => {
+  try {
+    const { email } = req.body;
+    const User = require('../models/User');
+    
+    // Check if user exists with exact email
+    const exactUser = await User.findOne({ where: { email } });
+    
+    // Check all users with similar emails (for debugging)
+    const similarUsers = await User.findAll({
+      where: {
+        email: {
+          [require('sequelize').Op.like]: `%${email.split('@')[0]}%`
+        }
+      },
+      attributes: ['id', 'email', 'fullName', 'createdAt']
+    });
+    
+    res.status(200).json({
+      status: 'success',
+      message: 'Debug info retrieved',
+      data: {
+        searchEmail: email,
+        exactUserExists: !!exactUser,
+        exactUser: exactUser ? {
+          id: exactUser.id,
+          email: exactUser.email,
+          fullName: exactUser.fullName,
+          createdAt: exactUser.createdAt
+        } : null,
+        similarUsers: similarUsers.map(user => ({
+          id: user.id,
+          email: user.email,
+          fullName: user.fullName,
+          createdAt: user.createdAt
+        })),
+        totalSimilarUsers: similarUsers.length
+      }
+    });
+
+  } catch (error) {
+    logger.error('Debug user error:', error);
+    res.status(500).json({
+      status: 'error',
+      message: 'Debug failed',
+      error: error.message
+    });
+  }
+}));
+
 module.exports = router; 
