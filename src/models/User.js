@@ -1,5 +1,6 @@
 const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/database');
+const { normalizeEmail } = require('../utils/emailUtils');
 
 const User = sequelize.define('User', {
   id: {
