@@ -25,4 +25,4 @@ ENV PORT=8080
 
 # Baseline (for sync()-created schemas) -> run pending migrations -> start.
 # Safe with min=max=1 (no concurrent migrators); all steps are idempotent.
-CMD ["sh", "-c", "node scripts/baseline-migrations.js && node_modules/.bin/sequelize-cli db:migrate && node src/server.js"]
+CMD ["sh", "-c", "node scripts/baseline-migrations.js && node_modules/.bin/sequelize-cli db:migrate && (node scripts/seed-reference-data.js || true) && node src/server.js"]
