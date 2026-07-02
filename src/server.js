@@ -3,6 +3,7 @@ require('express-async-errors');
 
 const app = require('./app');
 const { connectToDatabase, sequelize } = require('./config/database');
+const { initAssociations } = require('./models/associations');
 const azureStorageService = require('./services/azureStorageService');
 const audioWebSocketService = require('./services/audioWebSocketService');
 const logger = require('./utils/logger');
@@ -24,7 +25,11 @@ async function startServer() {
     try {
       await connectToDatabase();
       logger.info('✅ Database connected successfully');
-      
+
+      // Wire model associations (CMS data model + existing models)
+      initAssociations();
+      logger.info('🔗 Model associations initialised');
+
       // Sync database models (create tables if they don't exist)
       logger.info('🔄 Syncing database models...');
       await sequelize.sync({ alter: false });

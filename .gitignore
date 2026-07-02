@@ -57,3 +57,9 @@ build/
 
 # Deployment files
 deployment-env-template.txt
+
+# RAG knowledge-base source documents (large binaries; fetched, not committed)
+data/sources/
+
+# Local secrets file (contains live keys — should never be committed)
+local.env.local.l

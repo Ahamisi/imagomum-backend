@@ -18,6 +18,9 @@ const appointmentRoutes = require('./routes/appointments');
 const onboardingRoutes = require('./routes/onboarding');
 const chatRoutes = require('./routes/chat');
 const testRoutes = require('./routes/test');
+const contentSourceRoutes = require('./routes/contentSources');
+const contentItemRoutes = require('./routes/contentItems');
+const cmsAdminRoutes = require('./routes/cmsAdmin');
 
 const app = express();
 
@@ -156,6 +159,9 @@ app.use(`/api/${API_VERSION}/appointments`, appointmentRoutes);
 app.use(`/api/${API_VERSION}/onboarding`, onboardingRoutes);
 app.use(`/api/${API_VERSION}/chat`, chatRoutes);
 app.use(`/api/${API_VERSION}/test`, testRoutes);
+app.use(`/api/${API_VERSION}/content-sources`, contentSourceRoutes);
+app.use(`/api/${API_VERSION}/content-items`, contentItemRoutes);
+app.use(`/api/${API_VERSION}/cms-admin`, cmsAdminRoutes);
 
 // API base route
 app.get(`/api/${API_VERSION}`, (req, res) => {
@@ -171,7 +177,10 @@ app.get(`/api/${API_VERSION}`, (req, res) => {
       appointments: `/api/${API_VERSION}/appointments`,
       onboarding: `/api/${API_VERSION}/onboarding`,
       chat: `/api/${API_VERSION}/chat`,
-      test: `/api/${API_VERSION}/test`
+      test: `/api/${API_VERSION}/test`,
+      contentSources: `/api/${API_VERSION}/content-sources`,
+      contentItems: `/api/${API_VERSION}/content-items`,
+      cmsAdmin: `/api/${API_VERSION}/cms-admin`
     }
   });
 });

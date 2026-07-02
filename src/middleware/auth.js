@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken');
-const { AuthenticationError } = require('./errorHandler');
+const { AuthenticationError, AuthorizationError } = require('./errorHandler');
 const logger = require('../utils/logger');
+const User = require('../models/User');
 
 const auth = async (req, res, next) => {
   try {
@@ -65,6 +66,37 @@ const authorize = (...allowedRoles) => {
   };
 };
 
+/**
+ * CMS RBAC guard. Must run after `auth`. Loads the user's cms_role from the DB
+ * (the JWT does not carry it) and rejects anyone whose role is not allowed.
+ * On success attaches the full Sequelize user as req.cmsUser for downstream use.
+ *
+ * Usage: router.post('/x', auth, requireCmsRole('editor', 'admin'), handler)
+ */
+const requireCmsRole = (...allowedRoles) => {
+  return async (req, res, next) => {
+    try {
+      const user = await User.findByPk(req.user.id);
+
+      if (!user || !user.cmsRole || !allowedRoles.includes(user.cmsRole)) {
+        logger.logSecurityEvent?.('CMS_UNAUTHORIZED_ACCESS_ATTEMPT', {
+          userId: req.user.id,
+          cmsRole: user?.cmsRole || null,
+          requiredRoles: allowedRoles,
+          route: req.originalUrl,
+          ip: req.ip
+        });
+        throw new AuthorizationError('CMS access denied: requires one of [' + allowedRoles.join(', ') + ']');
+      }
+
+      req.cmsUser = user;
+      next();
+    } catch (error) {
+      next(error);
+    }
+  };
+};
+
 // Middleware to check email verification
 const requireEmailVerification = (req, res, next) => {
   if (!req.user.isEmailVerified) {
@@ -76,4 +108,5 @@ const requireEmailVerification = (req, res, next) => {
 module.exports = auth;
 module.exports.auth = auth;
 module.exports.authorize = authorize;
+module.exports.requireCmsRole = requireCmsRole;
 module.exports.requireEmailVerification = requireEmailVerification; 

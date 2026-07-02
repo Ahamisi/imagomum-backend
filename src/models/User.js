@@ -142,7 +142,77 @@ const User = sequelize.define('User', {
     type: DataTypes.DATE,
     allowNull: true
   },
-  
+
+  // CMS personalisation profile fields (see CMS spec §3.1 UserProfile).
+  // dueDate maps to `edd`; onboardingDate maps to `onboardingCompletedAt`.
+  gestationalWeekAtSignup: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+    field: 'gestational_week_at_signup',
+    comment: 'Gestational week (1-42) captured at onboarding'
+  },
+
+  locationState: {
+    type: DataTypes.STRING(50),
+    allowNull: true,
+    field: 'location_state',
+    comment: 'Nigerian state - for localising content and clinic references'
+  },
+
+  locationLga: {
+    type: DataTypes.STRING(80),
+    allowNull: true,
+    field: 'location_lga',
+    comment: 'Local Government Area for more granular localisation'
+  },
+
+  parityStatus: {
+    type: DataTypes.ENUM('primigravida', 'multigravida'),
+    allowNull: true,
+    field: 'parity_status'
+  },
+
+  ageGroup: {
+    type: DataTypes.ENUM('<20', '20-25', '26-30', '31-35', '36+'),
+    allowNull: true,
+    field: 'age_group'
+  },
+
+  languagePreference: {
+    type: DataTypes.ENUM('en', 'yo', 'ha', 'ig'),
+    allowNull: false,
+    defaultValue: 'en',
+    field: 'language_preference'
+  },
+
+  riskFlags: {
+    type: DataTypes.ARRAY(DataTypes.TEXT),
+    allowNull: true,
+    field: 'risk_flags',
+    comment: 'e.g. ["gestational_diabetes","hypertension","anemia","twins"]'
+  },
+
+  notificationPref: {
+    type: DataTypes.ENUM('push', 'sms', 'whatsapp'),
+    allowNull: false,
+    defaultValue: 'push',
+    field: 'notification_pref'
+  },
+
+  // CMS staff RBAC (see CMS spec §10). NULL cms_role = regular app user (mother).
+  cmsRole: {
+    type: DataTypes.ENUM('editor', 'reviewer', 'publisher', 'admin'),
+    allowNull: true,
+    field: 'cms_role'
+  },
+
+  cmsCredentials: {
+    type: DataTypes.STRING(200),
+    allowNull: true,
+    field: 'cms_credentials',
+    comment: 'Reviewer professional credentials, copied onto MedicalReview at review time'
+  },
+
   // Password reset
   passwordResetToken: {
     type: DataTypes.STRING,
@@ -217,6 +287,27 @@ User.prototype.getOnboardingInfo = function() {
     completedAt: this.onboardingCompletedAt,
     isSkipped: this.onboardingSkipped,
     answers: this.onboardingAnswers || {}
+  };
+};
+
+/**
+ * Projects the User onto the CMS UserProfile shape (CMS spec §3.1) consumed by
+ * the personalisation engine and stored as the WeeklyDelivery snapshot.
+ * dueDate -> edd, onboardingDate -> onboardingCompletedAt.
+ */
+User.prototype.getPersonalizationProfile = function() {
+  return {
+    id: this.id,
+    dueDate: this.edd,
+    gestationalWeekAtSignup: this.gestationalWeekAtSignup,
+    locationState: this.locationState,
+    locationLga: this.locationLga,
+    parityStatus: this.parityStatus,
+    ageGroup: this.ageGroup,
+    languagePreference: this.languagePreference,
+    riskFlags: this.riskFlags || [],
+    notificationPref: this.notificationPref,
+    onboardingDate: this.onboardingCompletedAt
   };
 };
 
