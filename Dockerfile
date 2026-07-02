@@ -23,5 +23,6 @@ EXPOSE 8080
 ENV NODE_ENV=production
 ENV PORT=8080
 
-# Start the application
-CMD ["node", "src/server.js"]
+# Run pending migrations, then start. Safe with min=max=1 (no concurrent
+# migrators); migrations are idempotent so restarts just no-op.
+CMD ["sh", "-c", "node_modules/.bin/sequelize-cli db:migrate && node src/server.js"]

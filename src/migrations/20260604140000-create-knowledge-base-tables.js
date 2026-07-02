@@ -15,6 +15,11 @@ const EMBEDDING_DIM = 1536;
 
 module.exports = {
   async up(queryInterface, Sequelize) {
+    // pgvector must exist before the `embedding vector(1536)` column below.
+    // On Azure Postgres Flexible Server, `vector` must first be allowlisted in
+    // the azure.extensions server parameter (a one-time infra step).
+    await queryInterface.sequelize.query('CREATE EXTENSION IF NOT EXISTS vector;');
+
     // One row per ingested source document (a WHO/FMOH PDF, etc.)
     await queryInterface.createTable('source_documents', {
       id: { type: Sequelize.UUID, defaultValue: Sequelize.UUIDV4, primaryKey: true, allowNull: false },

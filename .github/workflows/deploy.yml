@@ -50,6 +50,7 @@ jobs:
           --name ${{ env.AZURE_CONTAINER_APP_NAME }} \
           --resource-group ${{ env.AZURE_RESOURCE_GROUP }} \
           --image ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }} \
+          --min-replicas 1 --max-replicas 1 \
           --set-env-vars \
             NODE_ENV=production \
             PORT=8080 \
@@ -60,4 +61,12 @@ jobs:
             AZURE_STORAGE_CONNECTION_STRING="${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}" \
             AI_SERVICE_BASE_URL="${{ secrets.AI_SERVICE_BASE_URL }}" \
             EMAIL_USER="${{ secrets.EMAIL_USER }}" \
-            EMAIL_PASSWORD="${{ secrets.EMAIL_PASSWORD }}"
+            EMAIL_PASSWORD="${{ secrets.EMAIL_PASSWORD }}" \
+            AZURE_OPENAI_ENDPOINT="${{ secrets.AZURE_OPENAI_ENDPOINT }}" \
+            AZURE_OPENAI_KEY1="${{ secrets.AZURE_OPENAI_KEY1 }}" \
+            AZURE_OPENAI_EMBEDDING_DEPLOYMENT="${{ secrets.AZURE_OPENAI_EMBEDDING_DEPLOYMENT }}" \
+            AZURE_OPENAI_CHAT_DEPLOYMENT="${{ secrets.AZURE_OPENAI_CHAT_DEPLOYMENT }}" \
+            AZURE_OPENAI_API_VERSION="${{ secrets.AZURE_OPENAI_API_VERSION }}" \
+            LLAMA_CLOUD_API_KEY="${{ secrets.LLAMA_CLOUD_API_KEY }}" \
+            YOUTUBE_API_KEY="${{ secrets.YOUTUBE_API_KEY }}" \
+            WEEKLY_DELIVERY_SCHEDULER=enabled

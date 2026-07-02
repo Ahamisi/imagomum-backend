@@ -44,4 +44,24 @@ router.patch('/users/:id/role',
   [body('cmsRole').optional({ nullable: true }).isIn(['editor', 'reviewer', 'publisher', 'admin']).withMessage('invalid cmsRole')],
   asyncHandler(controller.setRole));
 
+/**
+ * @swagger
+ * /api/v1/cms-admin/delivery/status:
+ *   get:
+ *     tags: [CMS - Admin]
+ *     security: [{ bearerAuth: [] }]
+ *     summary: Monitor the weekly delivery scheduler (admin, publisher)
+ *     description: Scheduler state (enabled, cron, last run, next run, last result/error) + delivery counts by status.
+ *     responses: { 200: { description: Scheduler status } }
+ * /api/v1/cms-admin/delivery/run:
+ *   post:
+ *     tags: [CMS - Admin]
+ *     security: [{ bearerAuth: [] }]
+ *     summary: Manually trigger a weekly delivery run (admin)
+ *     description: Runs the (idempotent) delivery engine now, out of schedule. Returns the run result.
+ *     responses: { 200: { description: Run result } }
+ */
+router.get('/delivery/status', requireCmsRole('admin', 'publisher'), asyncHandler(controller.deliveryStatus));
+router.post('/delivery/run', requireCmsRole('admin'), asyncHandler(controller.runDelivery));
+
 module.exports = router;

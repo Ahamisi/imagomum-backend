@@ -6,6 +6,7 @@ const { connectToDatabase, sequelize } = require('./config/database');
 const { initAssociations } = require('./models/associations');
 const azureStorageService = require('./services/azureStorageService');
 const audioWebSocketService = require('./services/audioWebSocketService');
+const { initDeliveryScheduler, closeDeliveryScheduler } = require('./services/deliveryScheduler');
 const logger = require('./utils/logger');
 
 const PORT = process.env.PORT || 8080;
@@ -38,6 +39,13 @@ async function startServer() {
       logger.error('❌ Database connection failed:', dbError.message);
       logger.error('Stack:', dbError.stack);
       throw dbError;
+    }
+
+    // Weekly delivery scheduler (BullMQ + Redis). No-op unless enabled.
+    try {
+      initDeliveryScheduler();
+    } catch (schedErr) {
+      logger.error('⚠️ Delivery scheduler init failed (continuing):', schedErr.message);
     }
 
     // Initialize Azure Storage
@@ -84,6 +92,7 @@ async function gracefulShutdown(signal) {
       logger.info('HTTP server closed');
       
       try {
+        await closeDeliveryScheduler();
         if (sequelize) {
           await sequelize.close();
           logger.info('Database connections closed');

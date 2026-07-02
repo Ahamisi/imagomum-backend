@@ -1,5 +1,8 @@
 const { validationResult } = require('express-validator');
+const { fn, col } = require('sequelize');
 const User = require('../models/User');
+const WeeklyDelivery = require('../models/WeeklyDelivery');
+const { getSchedulerStatus, triggerNow } = require('../services/deliveryScheduler');
 const { ValidationError, NotFoundError } = require('../middleware/errorHandler');
 
 const cmsAdminController = {
@@ -35,6 +38,25 @@ const cmsAdminController = {
       order: [['cmsRole', 'ASC']]
     });
     res.status(200).json({ status: 'success', results: staff.length, data: { staff } });
+  },
+
+  // GET /api/v1/cms-admin/delivery/status  (admin, publisher) - monitor the weekly scheduler
+  async deliveryStatus(req, res) {
+    const scheduler = getSchedulerStatus();
+    const rows = await WeeklyDelivery.findAll({
+      attributes: ['status', [fn('COUNT', col('id')), 'count']],
+      group: ['status'],
+      raw: true
+    });
+    const byStatus = Object.fromEntries(rows.map((r) => [r.status, Number(r.count)]));
+    const total = Object.values(byStatus).reduce((a, b) => a + b, 0);
+    res.status(200).json({ status: 'success', data: { scheduler, deliveries: { total, byStatus } } });
+  },
+
+  // POST /api/v1/cms-admin/delivery/run  (admin) - manually trigger a delivery run
+  async runDelivery(req, res) {
+    const result = await triggerNow();
+    res.status(200).json({ status: 'success', data: { result } });
   }
 };
 
