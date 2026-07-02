@@ -11,20 +11,25 @@
  */
 module.exports = {
   async up(queryInterface, Sequelize) {
+    const cols = await queryInterface.describeTable('users');
+
     // NOTE: no `comment` on the ENUM column - Sequelize 6 generates malformed
     // SQL for addColumn when an ENUM type is combined with a comment. The
     // documentation lives on the User model attribute instead.
-    await queryInterface.addColumn('users', 'cms_role', {
-      type: Sequelize.ENUM('editor', 'reviewer', 'publisher', 'admin'),
-      allowNull: true
-    });
+    if (!cols.cms_role) {
+      await queryInterface.addColumn('users', 'cms_role', {
+        type: Sequelize.ENUM('editor', 'reviewer', 'publisher', 'admin'),
+        allowNull: true
+      });
+    }
+    if (!cols.cms_credentials) {
+      await queryInterface.addColumn('users', 'cms_credentials', { type: Sequelize.STRING(200), allowNull: true });
+    }
 
-    await queryInterface.addColumn('users', 'cms_credentials', {
-      type: Sequelize.STRING(200),
-      allowNull: true
-    });
-
-    await queryInterface.addIndex('users', ['cms_role']);
+    const indexes = await queryInterface.showIndex('users');
+    if (!indexes.some((i) => i.fields.some((f) => f.attribute === 'cms_role'))) {
+      await queryInterface.addIndex('users', ['cms_role']);
+    }
   },
 
   async down(queryInterface, Sequelize) {

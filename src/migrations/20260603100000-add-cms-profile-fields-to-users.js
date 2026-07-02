@@ -15,58 +15,49 @@
  */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.addColumn('users', 'gestational_week_at_signup', {
-      type: Sequelize.INTEGER,
-      allowNull: true,
+    // Idempotent: prod's users table was originally created by sequelize.sync(),
+    // so some of these columns may already exist. Add only what's missing.
+    const cols = await queryInterface.describeTable('users');
+    const addIfMissing = (name, spec) => (cols[name] ? Promise.resolve() : queryInterface.addColumn('users', name, spec));
+
+    await addIfMissing('gestational_week_at_signup', {
+      type: Sequelize.INTEGER, allowNull: true,
       comment: 'Gestational week (1-42) captured when the user completed onboarding'
     });
-
-    await queryInterface.addColumn('users', 'location_state', {
-      type: Sequelize.STRING(50),
-      allowNull: true,
+    await addIfMissing('location_state', {
+      type: Sequelize.STRING(50), allowNull: true,
       comment: 'Nigerian state - used for localising content and clinic references'
     });
-
-    await queryInterface.addColumn('users', 'location_lga', {
-      type: Sequelize.STRING(80),
-      allowNull: true,
+    await addIfMissing('location_lga', {
+      type: Sequelize.STRING(80), allowNull: true,
       comment: 'Local Government Area for more granular localisation'
     });
-
-    await queryInterface.addColumn('users', 'parity_status', {
-      type: Sequelize.ENUM('primigravida', 'multigravida'),
-      allowNull: true,
+    await addIfMissing('parity_status', {
+      type: Sequelize.ENUM('primigravida', 'multigravida'), allowNull: true,
       comment: 'Whether this is a first pregnancy or a subsequent one'
     });
-
-    await queryInterface.addColumn('users', 'age_group', {
-      type: Sequelize.ENUM('<20', '20-25', '26-30', '31-35', '36+'),
-      allowNull: true,
+    await addIfMissing('age_group', {
+      type: Sequelize.ENUM('<20', '20-25', '26-30', '31-35', '36+'), allowNull: true,
       comment: 'Age bracket for risk-stratified content targeting'
     });
-
-    await queryInterface.addColumn('users', 'language_preference', {
-      type: Sequelize.ENUM('en', 'yo', 'ha', 'ig'),
-      allowNull: false,
-      defaultValue: 'en',
+    await addIfMissing('language_preference', {
+      type: Sequelize.ENUM('en', 'yo', 'ha', 'ig'), allowNull: false, defaultValue: 'en',
       comment: 'Preferred language: English, Yoruba, Hausa, or Igbo'
     });
-
-    await queryInterface.addColumn('users', 'risk_flags', {
-      type: Sequelize.ARRAY(Sequelize.TEXT),
-      allowNull: true,
+    await addIfMissing('risk_flags', {
+      type: Sequelize.ARRAY(Sequelize.TEXT), allowNull: true,
       comment: 'e.g. ["gestational_diabetes","hypertension","anemia","twins"]'
     });
-
-    await queryInterface.addColumn('users', 'notification_pref', {
-      type: Sequelize.ENUM('push', 'sms', 'whatsapp'),
-      allowNull: false,
-      defaultValue: 'push',
+    await addIfMissing('notification_pref', {
+      type: Sequelize.ENUM('push', 'sms', 'whatsapp'), allowNull: false, defaultValue: 'push',
       comment: 'Preferred channel for weekly tip notifications'
     });
 
-    await queryInterface.addIndex('users', ['location_state']);
-    await queryInterface.addIndex('users', ['language_preference']);
+    // Guard indexes too (a pre-existing column may already be indexed).
+    const indexes = await queryInterface.showIndex('users');
+    const hasIndex = (col) => indexes.some((i) => i.fields.some((f) => f.attribute === col));
+    if (!hasIndex('location_state')) await queryInterface.addIndex('users', ['location_state']);
+    if (!hasIndex('language_preference')) await queryInterface.addIndex('users', ['language_preference']);
   },
 
   async down(queryInterface, Sequelize) {

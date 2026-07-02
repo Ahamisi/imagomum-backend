@@ -23,6 +23,6 @@ EXPOSE 8080
 ENV NODE_ENV=production
 ENV PORT=8080
 
-# Run pending migrations, then start. Safe with min=max=1 (no concurrent
-# migrators); migrations are idempotent so restarts just no-op.
-CMD ["sh", "-c", "node_modules/.bin/sequelize-cli db:migrate && node src/server.js"]
+# Baseline (for sync()-created schemas) -> run pending migrations -> start.
+# Safe with min=max=1 (no concurrent migrators); all steps are idempotent.
+CMD ["sh", "-c", "node scripts/baseline-migrations.js && node_modules/.bin/sequelize-cli db:migrate && node src/server.js"]
