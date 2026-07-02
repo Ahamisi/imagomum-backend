@@ -395,11 +395,14 @@ router.post('/logout', auth, asyncHandler(authController.logout));
  *               email:
  *                 type: string
  *                 format: email
+ *     description: |
+ *       Sends a 6-digit password reset code to the user's email.
+ *
+ *       For account-enumeration protection this always returns 200 with a
+ *       generic message, whether or not an account exists for the email.
  *     responses:
  *       200:
- *         description: Password reset email sent
- *       404:
- *         description: User not found
+ *         description: Generic acknowledgement (a code is sent only if the account exists)
  */
 router.post('/forgot-password', [
   body('email').isEmail().normalizeEmail()
@@ -409,7 +412,10 @@ router.post('/forgot-password', [
  * @swagger
  * /api/v1/auth/reset-password:
  *   post:
- *     summary: Reset password
+ *     summary: Reset password with a 6-digit code
+ *     description: |
+ *       Completes a password reset using the 6-digit code emailed by
+ *       `/forgot-password`. The code is valid for 10 minutes and single-use.
  *     tags: [Authentication]
  *     requestBody:
  *       required: true
@@ -418,23 +424,38 @@ router.post('/forgot-password', [
  *           schema:
  *             type: object
  *             required:
- *               - token
- *               - password
+ *               - email
+ *               - otp
+ *               - newPassword
  *             properties:
- *               token:
+ *               email:
  *                 type: string
- *               password:
+ *                 format: email
+ *                 example: "yellow@gmail.com"
+ *               otp:
+ *                 type: string
+ *                 example: "123456"
+ *                 description: "6-digit reset code"
+ *               newPassword:
  *                 type: string
  *                 minLength: 8
+ *                 example: "NewSecurePass123!"
  *     responses:
  *       200:
  *         description: Password reset successful
  *       400:
- *         description: Invalid or expired token
+ *         description: Validation error
+ *       401:
+ *         description: Invalid or expired reset code
  */
 router.post('/reset-password', [
-  body('token').notEmpty(),
-  body('password').isLength({ min: 8 }).matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]/)
+  body('email').isEmail().normalizeEmail(),
+  body('otp').isLength({ min: 6, max: 6 }).isNumeric().withMessage('A valid 6-digit code is required'),
+  body('newPassword')
+    .isLength({ min: 8 })
+    .withMessage('Password must be at least 8 characters long')
+    .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]/)
+    .withMessage('Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character')
 ], asyncHandler(authController.resetPassword));
 
 /**

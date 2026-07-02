@@ -126,6 +126,90 @@ class EmailService {
     }
   }
 
+  async sendPasswordResetOTP(email, otp, userName = 'User') {
+    try {
+      if (!this.initialized) {
+        // Mock implementation for development
+        logger.warn(`📧 [MOCK] Email service not initialized - Password reset OTP to ${email}: ${otp}`);
+        console.log(`\n🔐 [MOCK] Password reset OTP for ${email}: ${otp}\n`);
+        return { success: false, mock: true, error: 'Email service not initialized' };
+      }
+
+      // Test transporter connection before sending
+      try {
+        await this.transporter.verify();
+        logger.info('📧 Email transporter verified successfully');
+      } catch (verifyError) {
+        logger.error('❌ Email transporter verification failed:', verifyError);
+        throw new Error(`Email service verification failed: ${verifyError.message}`);
+      }
+
+      const mailOptions = {
+        from: {
+          name: 'Imagomum',
+          address: process.env.EMAIL_USER
+        },
+        to: email,
+        subject: 'Your Imagomum Password Reset Code',
+        html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+            <div style="text-align: center; margin-bottom: 30px;">
+              <h1 style="color: #2563eb; margin: 0;">Imagomum</h1>
+              <p style="color: #6b7280; margin: 5px 0;">Ultrasound Care & Support</p>
+            </div>
+
+            <div style="background: #f8fafc; border-radius: 8px; padding: 30px; text-align: center;">
+              <h2 style="color: #1f2937; margin-bottom: 20px;">Password Reset Code</h2>
+              <p style="color: #4b5563; margin-bottom: 30px;">Hi ${userName},</p>
+              <p style="color: #4b5563; margin-bottom: 30px;">
+                We received a request to reset your password. Use this code to set a new one:
+              </p>
+
+              <div style="background: white; border: 2px solid #e5e7eb; border-radius: 8px; padding: 20px; margin: 20px 0; display: inline-block;">
+                <span style="font-size: 32px; font-weight: bold; color: #2563eb; letter-spacing: 4px;">${otp}</span>
+              </div>
+
+              <p style="color: #6b7280; font-size: 14px; margin-top: 30px;">
+                This code will expire in 10 minutes for security reasons.
+              </p>
+              <p style="color: #6b7280; font-size: 14px;">
+                If you didn't request a password reset, please ignore this email — your password will stay the same.
+              </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
+              <p style="color: #9ca3af; font-size: 12px;">
+                © 2025 Imagomum. All rights reserved.
+              </p>
+            </div>
+          </div>
+        `
+      };
+
+      const result = await this.transporter.sendMail(mailOptions);
+      logger.info('📧 Password reset email sent successfully', {
+        email,
+        messageId: result.messageId,
+        accepted: result.accepted,
+        rejected: result.rejected
+      });
+
+      return { success: true, messageId: result.messageId, accepted: result.accepted };
+    } catch (error) {
+      logger.error('❌ Failed to send password reset email:', {
+        error: error.message,
+        code: error.code,
+        command: error.command,
+        email: email
+      });
+
+      // Fallback to console logging
+      console.log(`\n🔐 [FALLBACK] Password reset OTP for ${email}: ${otp}\n`);
+
+      return { success: false, error: error.message, fallback: true };
+    }
+  }
+
   async sendWelcomeEmail(email, userName) {
     try {
       if (!this.initialized) {

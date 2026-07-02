@@ -424,19 +424,127 @@ const authController = {
   },
 
   async forgotPassword(req, res) {
-    // TODO: Implement forgot password logic
-    res.status(200).json({
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw new ValidationError('Invalid email address');
+    }
+
+    const { email } = req.body;
+
+    // Generic response used whether or not the account exists, to avoid
+    // leaking which emails are registered (account-enumeration protection).
+    const genericResponse = {
       status: 'success',
-      message: 'Forgot password endpoint ready - awaiting implementation'
-    });
+      message: 'If an account exists for that email, a password reset code has been sent.'
+    };
+
+    try {
+      const user = await User.findOne({ where: { email } });
+
+      // Don't reveal non-existence; just return the generic response.
+      if (!user) {
+        logger.logSecurityEvent('PASSWORD_RESET_REQUEST_UNKNOWN_EMAIL', {
+          email,
+          ip: req.ip
+        });
+        return res.status(200).json(genericResponse);
+      }
+
+      // Generate reset OTP and expiry (stored in the dedicated reset fields so
+      // it never collides with the signup verification OTP).
+      const otp = generateOTP();
+      const resetExpiresAt = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
+
+      await user.update({
+        passwordResetToken: otp,
+        passwordResetExpiresAt: resetExpiresAt
+      });
+
+      // Send the reset code (never fail the request if email delivery fails).
+      try {
+        await emailService.sendPasswordResetOTP(user.email, otp, user.fullName);
+      } catch (emailError) {
+        logger.error('Failed to send password reset email:', emailError);
+      }
+
+      logger.logSystemEvent('PASSWORD_RESET_REQUESTED', {
+        userId: user.id,
+        email: user.email
+      });
+
+      return res.status(200).json(genericResponse);
+
+    } catch (error) {
+      logger.error('Forgot password error:', error);
+      throw error;
+    }
   },
 
   async resetPassword(req, res) {
-    // TODO: Implement reset password logic
-    res.status(200).json({
-      status: 'success',
-      message: 'Reset password endpoint ready - awaiting implementation'
-    });
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      const errorMessages = errors.array().map(error => ({
+        field: error.path,
+        message: error.msg
+      }));
+
+      return res.status(400).json({
+        status: 'fail',
+        message: 'Validation failed',
+        errors: errorMessages
+      });
+    }
+
+    const { email, otp, newPassword } = req.body;
+
+    try {
+      const user = await User.findOne({ where: { email } });
+
+      // Validate the reset code. Same generic error for missing user / wrong /
+      // expired code so we don't leak account existence or code state.
+      const codeInvalid =
+        !user ||
+        !user.passwordResetToken ||
+        user.passwordResetToken !== otp;
+
+      if (codeInvalid) {
+        logger.logSecurityEvent('INVALID_PASSWORD_RESET_ATTEMPT', {
+          email,
+          ip: req.ip
+        });
+        throw new AuthenticationError('Invalid or expired reset code');
+      }
+
+      if (!user.passwordResetExpiresAt || new Date() > user.passwordResetExpiresAt) {
+        throw new AuthenticationError('Invalid or expired reset code');
+      }
+
+      // Hash and persist the new password; clear the reset fields so the code
+      // can't be reused.
+      const saltRounds = parseInt(process.env.BCRYPT_SALT_ROUNDS) || 12;
+      const hashedPassword = await bcrypt.hash(newPassword, saltRounds);
+
+      await user.update({
+        password: hashedPassword,
+        passwordResetToken: null,
+        passwordResetExpiresAt: null
+      });
+
+      logger.logSystemEvent('PASSWORD_RESET_COMPLETED', {
+        userId: user.id,
+        email: user.email,
+        ip: req.ip
+      });
+
+      return res.status(200).json({
+        status: 'success',
+        message: 'Password reset successful. You can now log in with your new password.'
+      });
+
+    } catch (error) {
+      logger.error('Reset password error:', error);
+      throw error;
+    }
   }
 };
 
