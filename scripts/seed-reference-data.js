@@ -13,6 +13,9 @@
 const ContentSource = require('../src/models/ContentSource');
 const User = require('../src/models/User');
 const { sequelize } = require('../src/config/database');
+const { initAssociations } = require('../src/models/associations');
+const medlinePlus = require('../src/services/medlinePlusService');
+const topicBuilder = require('../src/services/topicBuilderService');
 
 // name -> canonical config. licenseType is required (no default).
 const SOURCES = [
@@ -44,6 +47,26 @@ const SOURCES = [
       console.log(`seed-reference-data: bootstrapped admin ${email} — unset BOOTSTRAP_ADMIN_EMAIL now`);
     } else {
       console.log(`seed-reference-data: ${email} already admin`);
+    }
+  }
+
+  // Optional CMS content seeding: ingest MedlinePlus + scaffold the Appendix B
+  // topic map. Gated by SEED_CMS_CONTENT so it only runs when explicitly enabled
+  // (it makes external API calls); both operations are idempotent. Produces
+  // DRAFTS only — nothing is published/delivered without medical review.
+  if (process.env.SEED_CMS_CONTENT === 'enabled') {
+    initAssociations();
+    try {
+      const mp = await medlinePlus.ingest({ persist: true });
+      console.log(`seed-cms-content: MedlinePlus ${mp.created} created, ${mp.skipped} existed`);
+    } catch (e) {
+      console.warn('seed-cms-content: MedlinePlus ingest failed (non-fatal):', e.message);
+    }
+    try {
+      const tb = await topicBuilder.buildTopics({ persist: true });
+      console.log(`seed-cms-content: Topic Builder ${tb.topicsCreated} topics / ${tb.itemsCreated} items created`);
+    } catch (e) {
+      console.warn('seed-cms-content: Topic Builder failed (non-fatal):', e.message);
     }
   }
 
