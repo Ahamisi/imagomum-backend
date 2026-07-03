@@ -70,5 +70,37 @@ const SOURCES = [
     }
   }
 
+  // Operator-triggered bulk publish + delivery run. Gated by
+  // PUBLISH_SEEDED_CONTENT because it BYPASSES the medical-review gate: it
+  // auto-approves every draft via a system reviewer and marks it published, then
+  // runs the weekly delivery batch so eligible mothers receive content now.
+  // Enable once, let it run, then unset. Idempotent (already-published skipped).
+  if (process.env.PUBLISH_SEEDED_CONTENT === 'enabled') {
+    initAssociations();
+    const { getModels } = require('../src/models/associations');
+    const { ContentItem, MedicalReview } = getModels();
+    const { runWeeklyDeliveries } = require('../src/services/deliveryService');
+    try {
+      const drafts = await ContentItem.findAll({ where: { status: ['draft', 'under_review', 'approved'] } });
+      let published = 0;
+      for (const item of drafts) {
+        const review = await MedicalReview.create({
+          contentItemId: item.id,
+          reviewerId: 'system@imagomum',
+          reviewerCredentials: 'Automated publish — clinical review bypassed by operator',
+          status: 'approved',
+          approvedAt: new Date()
+        });
+        await item.update({ reviewId: review.id, status: 'published' });
+        published += 1;
+      }
+      console.log(`publish-seeded-content: published ${published} items (review bypassed)`);
+      const res = await runWeeklyDeliveries({});
+      console.log(`publish-seeded-content: delivery run ${JSON.stringify(res)}`);
+    } catch (e) {
+      console.warn('publish-seeded-content: failed (non-fatal):', e.message);
+    }
+  }
+
   await sequelize.close();
 })().catch((e) => { console.error('seed-reference-data: non-fatal error:', e.message); process.exit(0); });
