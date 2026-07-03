@@ -113,29 +113,35 @@ async function runWeeklyDeliveries({ now = new Date(), limit = 5, dryRun = false
  * Optionally transitions delivered -> opened.
  */
 async function getCurrentDelivery(userId, { markOpened = true } = {}) {
+  // Two-step load: the delivery first, then its topics. Doing this in one
+  // findOne forces a LIMIT 1 that — over the one-to-many topic join — collapses
+  // the result to a single topic, so the topics are fetched separately (no limit).
   const delivery = await WeeklyDelivery.findOne({
     where: { userId },
-    order: [['scheduledAt', 'DESC']],
-    subQuery: false, // deep nested includes + implicit LIMIT otherwise break the join aliases
-    include: [{
-      model: ContentTopic,
-      as: 'topics',
-      through: { attributes: ['displayOrder'] },
-      include: [{
-        model: ContentItem,
-        as: 'contentItems',
-        required: false,
-        where: { status: 'published' },
-        through: { attributes: ['displayOrder'] },
-        include: [
-          { model: MedicalReview, as: 'review', required: true, where: { status: 'approved' } },
-          { model: getModels().MediaAsset, as: 'mediaAssets', required: false }
-        ]
-      }]
-    }]
+    order: [['scheduledAt', 'DESC']]
   });
 
   if (!delivery) return null;
+
+  const topics = await delivery.getTopics({
+    joinTableAttributes: ['displayOrder'],
+    include: [{
+      model: ContentItem,
+      as: 'contentItems',
+      required: false,
+      where: { status: 'published' },
+      through: { attributes: ['displayOrder'] },
+      include: [
+        { model: MedicalReview, as: 'review', required: true, where: { status: 'approved' } },
+        { model: getModels().MediaAsset, as: 'mediaAssets', required: false }
+      ]
+    }]
+  });
+
+  // Order topics by their delivery display order (the story sequence) and attach
+  // them so callers read delivery.topics exactly as with an eager include.
+  topics.sort((a, b) => (a.DeliveryTopic?.displayOrder || 0) - (b.DeliveryTopic?.displayOrder || 0));
+  delivery.topics = topics;
 
   if (markOpened && delivery.status === 'delivered') {
     delivery.status = 'opened';
