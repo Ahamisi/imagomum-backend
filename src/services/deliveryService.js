@@ -34,7 +34,8 @@ const deliverableItemInclude = {
 };
 
 async function loadDeliverableTopics(where) {
-  return ContentTopic.findAll({ where, include: [deliverableItemInclude] });
+  // Library (browse-tab) topics are never delivered — only week-tailored ones.
+  return ContentTopic.findAll({ where: { ...where, isLibrary: false }, include: [deliverableItemInclude] });
 }
 
 /**
@@ -150,4 +151,29 @@ async function getCurrentDelivery(userId, { markOpened = true } = {}) {
   return delivery;
 }
 
-module.exports = { runWeeklyDeliveries, getCurrentDelivery, loadDeliverableTopics };
+/**
+ * Fetch evergreen browse-library topics (category tabs, spec §9), optionally
+ * filtered by category. Only published + approved items and their media are
+ * included. Week-agnostic (isLibrary=true), so never tied to a delivery.
+ */
+async function getLibraryTopics({ category } = {}) {
+  const where = { isLibrary: true };
+  if (category) where.category = category;
+  return ContentTopic.findAll({
+    where,
+    include: [{
+      model: ContentItem,
+      as: 'contentItems',
+      required: true,
+      where: { status: 'published' },
+      through: { attributes: ['displayOrder'] },
+      include: [
+        { model: MedicalReview, as: 'review', required: true, where: { status: 'approved' } },
+        { model: getModels().MediaAsset, as: 'mediaAssets', required: false }
+      ]
+    }],
+    order: [['category', 'ASC'], ['priority', 'DESC'], ['title', 'ASC']]
+  });
+}
+
+module.exports = { runWeeklyDeliveries, getCurrentDelivery, loadDeliverableTopics, getLibraryTopics };

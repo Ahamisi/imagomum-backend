@@ -22,6 +22,7 @@ const contentSourceRoutes = require('./routes/contentSources');
 const contentItemRoutes = require('./routes/contentItems');
 const cmsAdminRoutes = require('./routes/cmsAdmin');
 const deliveryRoutes = require('./routes/deliveries');
+const contentLibraryRoutes = require('./routes/contentLibrary');
 
 const app = express();
 
@@ -164,6 +165,7 @@ app.use(`/api/${API_VERSION}/content-sources`, contentSourceRoutes);
 app.use(`/api/${API_VERSION}/content-items`, contentItemRoutes);
 app.use(`/api/${API_VERSION}/cms-admin`, cmsAdminRoutes);
 app.use(`/api/${API_VERSION}/deliveries`, deliveryRoutes);
+app.use(`/api/${API_VERSION}/content-library`, contentLibraryRoutes);
 
 // API base route
 app.get(`/api/${API_VERSION}`, (req, res) => {

@@ -16,6 +16,7 @@ const { sequelize } = require('../src/config/database');
 const { initAssociations } = require('../src/models/associations');
 const medlinePlus = require('../src/services/medlinePlusService');
 const topicBuilder = require('../src/services/topicBuilderService');
+const categoryLibrary = require('../src/services/categoryLibraryService');
 
 // name -> canonical config. licenseType is required (no default).
 const SOURCES = [
@@ -67,6 +68,12 @@ const SOURCES = [
       console.log(`seed-cms-content: Topic Builder ${tb.topicsCreated} topics / ${tb.itemsCreated} items created`);
     } catch (e) {
       console.warn('seed-cms-content: Topic Builder failed (non-fatal):', e.message);
+    }
+    try {
+      const cl = await categoryLibrary.buildCategoryLibrary({ persist: true });
+      console.log(`seed-cms-content: category library MP ${cl.mpCreated} / targeted ${cl.targetedCreated} created`);
+    } catch (e) {
+      console.warn('seed-cms-content: category library failed (non-fatal):', e.message);
     }
   }
 

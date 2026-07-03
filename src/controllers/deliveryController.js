@@ -1,4 +1,4 @@
-const { getCurrentDelivery } = require('../services/deliveryService');
+const { getCurrentDelivery, getLibraryTopics } = require('../services/deliveryService');
 
 /**
  * Mobile delivery read API (CMS spec §10).
@@ -54,6 +54,16 @@ function shapeTopic(topic) {
   };
 }
 
+/** GET /api/v1/content-library?category=... — evergreen browse library (category tabs) */
+async function getLibrary(req, res) {
+  const { category } = req.query;
+  const topics = await getLibraryTopics({ category });
+  return res.json({
+    success: true,
+    data: { topics: topics.map(shapeTopic) }
+  });
+}
+
 /** GET /api/v1/deliveries/current */
 async function getCurrent(req, res) {
   const delivery = await getCurrentDelivery(req.user.id);
@@ -78,4 +88,4 @@ async function getCurrent(req, res) {
   });
 }
 
-module.exports = { getCurrent };
+module.exports = { getCurrent, getLibrary };

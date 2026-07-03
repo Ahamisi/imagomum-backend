@@ -31,7 +31,8 @@ const ContentTopic = sequelize.define('ContentTopic', {
   category: {
     type: DataTypes.ENUM(
       'nutrition', 'baby_dev', 'symptoms', 'antenatal_care',
-      'mental_health', 'warning_signs', 'postpartum_prep'
+      'mental_health', 'warning_signs', 'postpartum_prep',
+      'exercise', 'wellness'
     ),
     allowNull: false
   },
@@ -44,6 +45,13 @@ const ContentTopic = sequelize.define('ContentTopic', {
     type: DataTypes.INTEGER,
     allowNull: false,
     defaultValue: 0
+  },
+  isLibrary: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+    defaultValue: false,
+    field: 'is_library',
+    comment: 'Evergreen browse-library topic (category tabs); excluded from weekly delivery'
   }
 }, {
   tableName: 'content_topics',
