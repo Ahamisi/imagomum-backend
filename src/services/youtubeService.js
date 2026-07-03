@@ -34,16 +34,33 @@ function assertKey() {
   if (!API_KEY) throw new Error('YouTube: YOUTUBE_API_KEY not set');
 }
 
-async function ytGet(path, params) {
+// Transient YouTube Data API failures worth retrying. `accountDelegationForbidden`
+// ("cannot act on behalf of the specified Google account") is a long-standing,
+// intermittent quirk that hits some org-managed channels on search.list — it
+// clears on retry.
+const RETRYABLE_REASONS = new Set([
+  'accountDelegationForbidden', 'backendError', 'internalError', 'rateLimitExceeded'
+]);
+
+async function ytGet(path, params, { retries = 3 } = {}) {
   assertKey();
-  try {
-    const { data } = await axios.get(`${BASE_URL}${path}`, { params: { ...params, key: API_KEY } });
-    return data;
-  } catch (err) {
-    const status = err.response?.status;
-    const reason = err.response?.data?.error?.message || err.message;
-    throw new Error(`YouTube ${path} failed (HTTP ${status || '?'}): ${reason}`);
+  let lastErr;
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
+    try {
+      const { data } = await axios.get(`${BASE_URL}${path}`, { params: { ...params, key: API_KEY } });
+      return data;
+    } catch (err) {
+      lastErr = err;
+      const status = err.response?.status;
+      const reason = err.response?.data?.error?.errors?.[0]?.reason;
+      const retryable = RETRYABLE_REASONS.has(reason) || status === 500 || status === 503;
+      if (!retryable || attempt === retries) break;
+      await new Promise((resolve) => setTimeout(resolve, 300 * (attempt + 1)));
+    }
   }
+  const status = lastErr.response?.status;
+  const reason = lastErr.response?.data?.error?.message || lastErr.message;
+  throw new Error(`YouTube ${path} failed (HTTP ${status || '?'}): ${reason}`);
 }
 
 /** Build renderable embed + thumbnail URLs from a video id (spec §5.4). Pure. */
@@ -94,9 +111,17 @@ async function searchVideos(query, opts = {}) {
 
   const results = [];
   for (const channelId of channelIds) {
-    const data = await ytGet('/search', {
-      part: 'snippet', type: 'video', videoEmbeddable: 'true', maxResults: perChannel, q: query, channelId
-    });
+    let data;
+    try {
+      data = await ytGet('/search', {
+        part: 'snippet', type: 'video', videoEmbeddable: 'true', maxResults: perChannel, q: query, channelId
+      });
+    } catch (err) {
+      // A single channel's transient failure must not abort curation across the
+      // other approved channels — log and move on.
+      logger.warn(`YouTube: search failed for channel ${channelId}, skipping — ${err.message}`);
+      continue;
+    }
     for (const item of data.items || []) {
       results.push({
         videoId: item.id.videoId,
