@@ -17,6 +17,7 @@ const { initAssociations } = require('../src/models/associations');
 const medlinePlus = require('../src/services/medlinePlusService');
 const topicBuilder = require('../src/services/topicBuilderService');
 const categoryLibrary = require('../src/services/categoryLibraryService');
+const unsplash = require('../src/services/unsplashService');
 
 // name -> canonical config. licenseType is required (no default).
 const SOURCES = [
@@ -74,6 +75,12 @@ const SOURCES = [
       console.log(`seed-cms-content: category library MP ${cl.mpCreated} / targeted ${cl.targetedCreated} created`);
     } catch (e) {
       console.warn('seed-cms-content: category library failed (non-fatal):', e.message);
+    }
+    try {
+      const uc = await unsplash.backfillCovers({ persist: true });
+      console.log(`seed-cms-content: cover backfill ${uc.updated} topics (${uc.skipped || 'ok'})`);
+    } catch (e) {
+      console.warn('seed-cms-content: cover backfill failed (non-fatal):', e.message);
     }
   }
 

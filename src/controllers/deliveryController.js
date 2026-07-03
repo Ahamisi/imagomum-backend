@@ -1,4 +1,5 @@
 const { getCurrentDelivery, getLibraryTopics } = require('../services/deliveryService');
+const { buildStorySlides } = require('../utils/slideTemplate');
 
 /**
  * Mobile delivery read API (CMS spec §10).
@@ -43,6 +44,12 @@ function shapeTopic(topic) {
   const items = [...(topic.contentItems || [])]
     .sort((a, b) => throughOrder(a, 'TopicContentItem') - throughOrder(b, 'TopicContentItem'))
     .map(shapeItem);
+  // Story template: a cover slide + 3–4 readable text slides split from the
+  // item bodies. The app renders `slides` directly; `items` is kept for media.
+  const slides = buildStorySlides(
+    { title: topic.title, subtitle: topic.subtitle, coverImageUrl: topic.coverImageUrl },
+    items
+  );
   return {
     id: topic.id,
     title: topic.title,
@@ -50,7 +57,8 @@ function shapeTopic(topic) {
     coverImageUrl: topic.coverImageUrl,
     category: topic.category,
     estimatedReadMins: topic.estimatedReadMins,
-    items
+    items,
+    slides
   };
 }
 
