@@ -89,7 +89,9 @@ function buildStorySlides(topic, items = []) {
   const textSlides = [];
   for (const item of items) {
     for (const chunk of splitIntoSlides(item.body)) {
-      textSlides.push({ type: 'text', text: chunk });
+      // Every slide carries the cover image (dimmed behind the text) for a
+      // cohesive, polished look rather than flat colour cards.
+      textSlides.push({ type: 'text', image, text: chunk });
     }
   }
 
