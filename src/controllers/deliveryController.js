@@ -47,7 +47,7 @@ function shapeTopic(topic) {
   // Story template: a cover slide + 3–4 readable text slides split from the
   // item bodies. The app renders `slides` directly; `items` is kept for media.
   const slides = buildStorySlides(
-    { title: topic.title, subtitle: topic.subtitle, coverImageUrl: topic.coverImageUrl },
+    { title: topic.title, subtitle: topic.subtitle, coverImageUrl: topic.coverImageUrl, category: topic.category },
     items
   );
   return {

@@ -104,10 +104,15 @@ function selectTopicsForSegment({ segment, baseTopics = [], rules = [], topicsBy
   //    topics), preferring baby_dev/nutrition so no week is ever empty.
   if (selected.length < limit && fallbackTopics.length) {
     const present = new Set(selected.map(s => s.topic.id));
+    // Prefer fillers CLOSEST to the mother's week — otherwise a week-42 mother
+    // could be backfilled with a week-1 topic (alphabetical order).
+    const weekDist = (t) =>
+      t.gestationalWeek == null ? 0 : Math.abs(t.gestationalWeek - (segment.gestationalWeek || 0));
     const fillers = fallbackTopics
       .filter(t => !present.has(t.id) && !excluded.has(t.id))
       .map(t => ({ topic: t, effectivePriority: t.priority || 0 }))
       .sort((a, b) =>
+        weekDist(a.topic) - weekDist(b.topic) ||
         backfillRank(a.topic) - backfillRank(b.topic) ||
         (b.topic.priority || 0) - (a.topic.priority || 0) ||
         titleCmp(a.topic, b.topic)

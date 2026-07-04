@@ -116,5 +116,23 @@ const SOURCES = [
     }
   }
 
+  // Operator-gated delivery rebuild: wipe existing WeeklyDelivery/DeliveryTopic
+  // rows and re-run the batch (e.g. after a selection-logic change). Enable once,
+  // let it run, then unset.
+  if (process.env.REBUILD_DELIVERIES === 'enabled') {
+    initAssociations();
+    const { getModels } = require('../src/models/associations');
+    const { WeeklyDelivery, DeliveryTopic } = getModels();
+    const { runWeeklyDeliveries } = require('../src/services/deliveryService');
+    try {
+      await DeliveryTopic.destroy({ where: {}, force: true });
+      await WeeklyDelivery.destroy({ where: {}, force: true });
+      const res = await runWeeklyDeliveries({});
+      console.log(`rebuild-deliveries: ${JSON.stringify(res)}`);
+    } catch (e) {
+      console.warn('rebuild-deliveries: failed (non-fatal):', e.message);
+    }
+  }
+
   await sequelize.close();
 })().catch((e) => { console.error('seed-reference-data: non-fatal error:', e.message); process.exit(0); });

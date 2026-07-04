@@ -46,7 +46,7 @@ async function loadDeliverableTopics(where) {
  * @param {boolean} [opts.dryRun]     - compute + report without writing
  * @returns {Promise<{users:number, created:number, skipped:number, segments:number}>}
  */
-async function runWeeklyDeliveries({ now = new Date(), limit = 5, dryRun = false } = {}) {
+async function runWeeklyDeliveries({ now = new Date(), limit = 4, dryRun = false } = {}) {
   const users = await User.findAll({ where: { edd: { [Op.ne]: null }, onboardingCompleted: true } });
   const rules = await PersonalizationRule.findAll({ where: { active: true } });
 
